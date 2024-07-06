@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 920px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.logoBox {
+  padding-top: 50px;
+  height: 120px;
+}
+
+.logoBox p {
+  font-size: 38px;
+  font-weight: bold;
+  background: linear-gradient(50deg, #FFD4A1, #FF4885, #CD71D8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  font-family: 'Ariel', sans-serif;
+  letter-spacing: 10px;
+}
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.footer a {
+  color: #CD71D8;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 20px;
+  }
+}

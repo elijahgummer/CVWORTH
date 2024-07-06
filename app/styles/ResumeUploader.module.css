@@ -1,0 +1,51 @@
+.fileUploadBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding: 30px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 24px #f4f0f1;
+}
+
+.fileUploadBtnContainer.dragOver {
+  border-color: #FF4885;
+  background-color: #ff007b12;
+  box-shadow: 0 0 34px #FF4885;
+}
+
+.instructionsText {
+  font-size: 20px;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Matching text drop shadow */
+}
+
+.mainBtn {
+  background: linear-gradient(50deg, #FFD4A1, #FF4885, #CD71D8);
+  box-shadow: 0 0 24px #ffb20861;
+  border: 1px solid #CD71D8;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+  padding: 10px 20px;
+  color: #09090b;
+  cursor: pointer;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Matching text drop shadow */
+}
+
+.mainBtn:hover {
+  background-color: #ffc75d !important;
+  box-shadow: 0 0 34px #FF4885 !important;
+  text-shadow: 0 0 4px #CD71D8; /* Hover text shadow */
+  border-color: #FFD4A1 !important;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
