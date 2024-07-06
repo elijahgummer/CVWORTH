@@ -60,7 +60,6 @@ html {
   width: 100%;
   border: none;
   padding: 20px;
-  background: linear-gradient(90deg, #f135a8, #ff4885, #cd71d8);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   animation: gradientAnimation 10s ease infinite;
   background-size: 200% 200%;
