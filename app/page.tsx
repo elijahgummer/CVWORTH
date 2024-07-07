@@ -350,7 +350,7 @@ function Navbar({ className }: { className?: string }) {
             src="/logo.png"
             alt="Logo"
           />
-          <h1 className="font-bold -m-3">CVWORTH</h1>
+          <h1 className="font-bold -m-3 text-white font-bold">CVWORTH</h1>
         </div>
         <div className="flex justify-center items-center flex-row">
           <div className="mr-5">
@@ -376,14 +376,14 @@ function Navbar({ className }: { className?: string }) {
 export default function Home() {
   return (
     <main className="w-full">
-          <div className={styles.centeredContent}>
+          <div className="flex items-center justify-center flex-col">
             <BackgroundGradientAnimationDemo />
-            {/* <AnimatedTooltipPreview />
+            <AnimatedTooltipPreview />
             <NavbarDemo />
             <HoverSpring />
             <HeroScrollDemo />
             <ThreeDCardDemo />
-            <DockDemo /> */}
+            <DockDemo />
           </div>
     </main>
   );
