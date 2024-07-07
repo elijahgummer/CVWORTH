@@ -22,8 +22,9 @@ import SparklesText from "./components/magicui/sparkles-text";
 import AnimatedShinyText from "./components/magicui/animated-shiny-text";
 import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
-import { LampContainer } from "./components/ui/lamp";
-import { motion } from "framer-motion";
+import AnimatedGradientText from "./components/magicui/animated-gradient-text";
+import { motion } from 'framer-motion'
+
 
 
 const people = [
@@ -35,24 +36,90 @@ const people = [
   },
 ];
 
+const ProjectsData = [
+  {
+    id: 1,
+    name: 'syntaxUI',
+    description: 'Ready-to-use UI elements designed for rapid development.',
+    link: 'https://syntaxui.com',
+    image: 'https://ansubkhan.com/images/projects/syntaxUI.svg',
+  },
+  {
+    id: 2,
+    name: 'Prettyfolio',
+    description: 'A curated collection of portfolios for inspiration.',
+    link: 'https://prettyfolio.com',
+    image: 'https://ansubkhan.com/images/projects/prettyfolio.png',
+  },
+  {
+    id: 2,
+    name: 'Enchant',
+    description: 'A vibrant theme for Visual Studio Code.',
+    link: 'https://enchant.ansubkhan.com',
+    image: 'https://ansubkhan.com/images/projects/enchant.png',
+  },
+  {
+    id: 3,
+    name: 'Ansubkhan.com',
+    description: 'My personal website, blogs and newsletter.',
+    link: 'https://ansubkhan.com',
+    image: 'https://ansubkhan.com/images/projects/portfolio.png',
+  },
+  {
+    id: 4,
+    name: 'Quote Vault',
+    description: 'Social media, but for sharing quotes.',
+    link: 'https://quote-vault.vercel.app',
+    image: 'https://ansubkhan.com/images/projects/quote-vault.png',
+  },
+]
+
+const HoverSpring = () => {
+  return (
+    <div>
+      <div className="grid w-full grid-cols-2 gap-x-10 md:grid-cols-3">
+        {ProjectsData.map((project) => {
+          return (
+            <motion.div
+              whileHover={{
+                y: -8,
+              }}
+              transition={{
+                type: 'spring',
+                bounce: 0.7,
+              }}
+              key={project.id}
+              className="mt-5 text-left"
+            >
+              <a target="_blank" rel="noopener noreferrer" href={project.link}>
+                <Image
+                  src={project.image}
+                  width={30}
+                  height={30}
+                  className="mb-3 rounded-lg border-gray-400 dark:border"
+                  alt={project.name}
+                />
+                <div className="mb-1 text-sm font-medium text-gray-900 dark:text-gray-100">
+                  {project.name}
+                </div>
+                <div className="max-w-[250px] text-sm font-normal text-gray-500 dark:text-gray-500">
+                  {project.description}
+                </div>
+              </a>
+            </motion.div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export function DockDemo() {
   return (
     <div className="footerContainer">
-      <LampContainer>
-      <motion.h1
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="mt-8 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
-      ></motion.h1>
-      </LampContainer>
       <footer>
         <div className="social">
           <Dock>
@@ -130,30 +197,21 @@ const Icons = {
 export function ThreeDCardDemo() {
   return (
     <div className="h-[70rem] rounded-xl w-full dark:bg-black bg-black-100  dark:bg-dot-white/[1] bg-dot-white/[1] relative flex items-center justify-center flex-col">
-      <h1 className="md:text-7xl text-3xl lg:text-9xl font-bold text-center relative z-20 pointer-events-none whitespace-pre-wrap bg-gradient-to-b from-black to-gray-300/80 bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">
+      <h1 className="md:text-3xl text-3xl lg:text-8xl font-bold text-center relative z-20 pointer-events-none whitespace-pre-wrap bg-white bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">
         Upload Your Resume
       </h1>
-      <div className="w-[40rem] h-0 relative">
-        {/* Gradients */}
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent h-[2px] w-3/4 blur-sm" />
-        <div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-pink-500 to-transparent h-px w-3/4" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-[5px] w-1/4 blur-sm" />
-        <div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-purple-500 to-transparent h-px w-1/4" />
-
-        {/* Core component */}
-        <SparklesCore
-          background="transparent"
-          minSize={0.4}
-          maxSize={1}
-          particleDensity={1200}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-
-        {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 w-full h-full blur-mask"></div>
-      </div>
-
+      <div className="mt-10 z-10 flex items-center justify-center">
+      <AnimatedGradientText>
+        📂 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+        <span
+          className={cn(
+            `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
+          )}
+        >
+          Simply Drag & Drop
+        </span>
+      </AnimatedGradientText>
+    </div>
       <CardContainer className="inter-var">
         <CardBody className="flex justify-center flex-col items-center bg-black bg-opacity-500 border-black/[0.5] border-2 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[50rem] h-auto rounded-xl p-6">
           <CardItem
@@ -324,6 +382,7 @@ export default function Home() {
             <BackgroundGradientAnimationDemo />
             <AnimatedTooltipPreview />
             <NavbarDemo />
+            <HoverSpring />
             <HeroScrollDemo />
             <ThreeDCardDemo />
             <DockDemo />
