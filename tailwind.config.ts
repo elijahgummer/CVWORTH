@@ -31,6 +31,7 @@ const config: Config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         shimmer: "shimmer 8s infinite",
+        spotlight: "spotlight 2s ease .75s 1 forwards",
       },
       keyframes: {
         moveHorizontal: {
