@@ -234,8 +234,8 @@ footer .social > a:hover {
 
 
 .button {
-  --black: #000000;
-  --ch-black: #000000;
+  --black: #000;
+  --ch-black: #141414;
   --eer-black: #9b30ff; /* Purple */
   --night-rider: #ff6eb4; /* Pink */
   --white: #ffffff;

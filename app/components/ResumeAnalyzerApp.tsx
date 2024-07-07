@@ -10,23 +10,11 @@ const ResumeAnalyzerApp = () => {
   const [isLoadingResume, setIsLoadingResume] = useState(false);
   const [resumeText, setResumeText] = useState<string>('');
   const [confettiActive, setConfettiActive] = useState(false);
-  const [windowSize, setWindowSize] = useState({ width: window.innerWidth, height: window.innerHeight });
   const { completion, isLoading, complete, error } = useCompletion({
     api: '/api/resume',
   });
 
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowSize({ width: window.innerWidth, height: window.innerHeight });
-    };
-    
-    window.addEventListener('resize', handleResize);
-    
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
+  
   useEffect(() => {
     const getResumeWorth = async (text: string) => {
       const messageToSend = `RESUME: ${text}\n\n-------\n\n`;
@@ -58,8 +46,6 @@ const ResumeAnalyzerApp = () => {
 
       {confettiActive && (
         <Confetti
-          width={windowSize.width}
-          height={windowSize.height}
           recycle={false}
           numberOfPieces={500}
           onConfettiComplete={() => setConfettiActive(false)} // Stop confetti after it completes
