@@ -380,12 +380,12 @@ export default function Home() {
         <div className={styles.content}>
           <div className={styles.centeredContent}>
             <BackgroundGradientAnimationDemo />
-            <AnimatedTooltipPreview />
+            {/* <AnimatedTooltipPreview />
             <NavbarDemo />
             <HoverSpring />
             <HeroScrollDemo />
             <ThreeDCardDemo />
-            <DockDemo />
+            <DockDemo /> */}
           </div>
         </div>
       </div>
