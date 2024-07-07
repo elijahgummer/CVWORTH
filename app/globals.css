@@ -48,23 +48,6 @@ html {
   filter: blur(100px);
 }
 
-
-
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #ffffff;
-  border-radius: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(20px);
-  text-align: center;
-  width: 100%;
-  position: relative;
-  animation: fadeIn 1s ease-in-out;
-}
-
 .custum-file-upload {
   height: 110px;
   width: 250px;
@@ -121,88 +104,6 @@ footer {
     transform: translateY(0);
   }
 }
-
-footer ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  animation: slideIn 1s ease-in-out;
-}
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-footer li {
-  display: inline-block;
-  padding: 0 10px;
-}
-
-footer ul a {
-  color: inherit;
-  text-decoration: none;
-  opacity: 0.8;
-  transition: color 0.3s, opacity 0.3s;
-}
-
-footer ul a:hover {
-  opacity: 1;
-  color: #FFD700;
-}
-
-footer .social {
-  text-align: center;
-  padding-bottom: 25px;
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-footer .social > a {
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin: 0 8px;
-  color: inherit;
-  opacity: 0.75;
-  transition: transform 0.3s, border-color 0.3s, opacity 0.3s;
-  animation: pulse 2s infinite;
-}
-
-footer .social > a:hover {
-  opacity: 1;
-  border-color: #FFD700;
-  transform: scale(1.2);
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.05);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-
-
-
 .button {
   --black: #000000;
   --ch-black: #000000;
@@ -333,6 +234,97 @@ footer .social > a:hover {
   background: inherit;
   filter: blur(8px);
   z-index: -1;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  text-align: center;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+footer li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+footer ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: color 0.3s, opacity 0.3s;
+}
+
+footer ul a:hover {
+  opacity: 1;
+  color: #FFD700;
+}
+
+footer .social {
+  text-align: center;
+  padding-bottom: 25px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+  transition: transform 0.3s, border-color 0.3s, opacity 0.3s;
+  animation: pulse 2s infinite;
+}
+
+footer .social > a:hover {
+  opacity: 1;
+  border-color: #FFD700;
+  transform: scale(1.2);
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 @keyframes glow {
   from {
