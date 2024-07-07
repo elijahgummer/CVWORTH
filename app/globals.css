@@ -47,12 +47,7 @@ html {
   clip-path: ellipse(75% 50% at center);
   filter: blur(100px);
 }
-.container2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+
 
 
 footer {
@@ -88,6 +83,7 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .custum-file-upload .icon {
@@ -292,18 +288,10 @@ footer .social > a:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
-  width: 100%;
   color: white;
-  display: flex;
   margin: 0;
 }
 
-.container1 {
-  width: 100%;
-  max-width: 920px;
-  margin: auto;
-}
 
 .content {
   display: flex;

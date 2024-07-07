@@ -375,9 +375,7 @@ function Navbar({ className }: { className?: string }) {
 
 export default function Home() {
   return (
-    <main className={styles.App}>
-      <div className={styles.container2}>
-        <div className={styles.content}>
+    <main className="w-full">
           <div className={styles.centeredContent}>
             <BackgroundGradientAnimationDemo />
             {/* <AnimatedTooltipPreview />
@@ -387,8 +385,6 @@ export default function Home() {
             <ThreeDCardDemo />
             <DockDemo /> */}
           </div>
-        </div>
-      </div>
     </main>
   );
 }
