@@ -47,7 +47,6 @@ html {
   clip-path: ellipse(75% 50% at center);
   filter: blur(100px);
 }
-
 .custum-file-upload {
   height: 110px;
   width: 250px;
@@ -68,32 +67,26 @@ html {
   flex-direction: column;
   width: 100%;
 }
-
 .custum-file-upload .icon {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .custum-file-upload .icon svg {
   height: 80px;
 }
-
 .custum-file-upload .text {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 .custum-file-upload .text span {
   font-weight: 400;
   color: #e8e8e8;
 }
-
 .custum-file-upload input {
   display: none;
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -134,7 +127,6 @@ html {
 .tooltipContainer {
   margin-top: -100px;
 }
-
 .button:before,
 .button:after {
   content: "";
@@ -159,7 +151,6 @@ html {
   z-index: -1;
   animation: steam 20s linear infinite;
 }
-
 @keyframes steam {
   0% {
     background-position: 0 0;
@@ -192,8 +183,6 @@ html {
   color: white;
   margin: 0;
 }
-
-
 .content {
   display: flex;
   align-items: center;
@@ -235,7 +224,6 @@ html {
   filter: blur(8px);
   z-index: -1;
 }
-
 footer {
   display: flex;
   align-items: center;
@@ -250,8 +238,6 @@ footer {
   position: relative;
   animation: fadeIn 1s ease-in-out;
 }
-
-
 footer ul {
   padding: 0;
   list-style: none;
@@ -265,25 +251,21 @@ footer li {
   display: inline-block;
   padding: 0 10px;
 }
-
 footer ul a {
   color: inherit;
   text-decoration: none;
   opacity: 0.8;
   transition: color 0.3s, opacity 0.3s;
 }
-
 footer ul a:hover {
   opacity: 1;
   color: #FFD700;
 }
-
 footer .social {
   text-align: center;
   padding-bottom: 25px;
   animation: fadeIn 1.5s ease-in-out;
 }
-
 footer .social > a {
   font-size: 24px;
   width: 40px;
@@ -299,7 +281,6 @@ footer .social > a {
   transition: transform 0.3s, border-color 0.3s, opacity 0.3s;
   animation: pulse 2s infinite;
 }
-
 footer .social > a:hover {
   opacity: 1;
   border-color: #FFD700;
