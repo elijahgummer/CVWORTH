@@ -185,7 +185,7 @@ const Icons = {
 export function ThreeDCardDemo() {
   return (
     <div className="h-[70rem] rounded-xl w-full dark:bg-black bg-black-100  dark:bg-dot-white/[1] bg-dot-white/[1] relative flex items-center justify-center flex-col">
-      <h1 className="md:text-3xl text-3xl lg:text-8xl font-bold text-center relative z-20 pointer-events-none whitespace-pre-wrap text-#f2f2f2 bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">
+      <h1 className="md:text-3xl text-3xl lg:text-8xl font-bold text-center relative z-20 pointer-events-none whitespace-pre-wrap text-headerColor bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">
         Upload Your Resume
       </h1>
       <div className="mt-10 z-10 flex items-center justify-center">
