@@ -61,7 +61,7 @@ const ProjectsData = [
 const HoverSpring = () => {
   return (
     <div className="flex items-center justify-center w-full h-[600px]">
-      <div className="grid w-11/12 h-[400px] grid-cols-2 gap-x-10 md:grid-cols-3">
+      <div className="grid w-90% h-[400px] grid-cols-2 gap-x-10 md:grid-cols-3">
         {ProjectsData.map((project) => {
           return (
             <motion.div
