@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import ResumeAnalyzerApp from "./components/ResumeAnalyzerApp";
 import styles from "./styles/Home.module.css";
@@ -23,9 +23,7 @@ import AnimatedShinyText from "./components/magicui/animated-shiny-text";
 import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
-import { motion } from 'framer-motion'
-
-
+import { motion } from "framer-motion";
 
 const people = [
   {
@@ -39,41 +37,36 @@ const people = [
 const ProjectsData = [
   {
     id: 1,
-    name: 'syntaxUI',
-    description: 'Ready-to-use UI elements designed for rapid development.',
-    link: 'https://syntaxui.com',
-    image: 'https://ansubkhan.com/images/projects/syntaxUI.svg',
+    name: "syntaxUI",
+    description: "Ready-to-use UI elements designed for rapid development.",
+    link: "https://syntaxui.com",
+    image: "https://ansubkhan.com/images/projects/syntaxUI.svg",
   },
   {
     id: 2,
-    name: 'Prettyfolio',
-    description: 'A curated collection of portfolios for inspiration.',
-    link: 'https://prettyfolio.com',
-    image: 'https://ansubkhan.com/images/projects/prettyfolio.png',
+    name: "Prettyfolio",
+    description: "A curated collection of portfolios for inspiration.",
+    link: "https://prettyfolio.com",
+    image: "https://ansubkhan.com/images/projects/prettyfolio.png",
   },
   {
     id: 3,
-    name: 'Enchant',
-    description: 'A vibrant theme for Visual Studio Code.',
-    link: 'https://enchant.ansubkhan.com',
-    image: 'https://ansubkhan.com/images/projects/enchant.png',
+    name: "Enchant",
+    description: "A vibrant theme for Visual Studio Code.",
+    link: "https://enchant.ansubkhan.com",
+    image: "https://ansubkhan.com/images/projects/enchant.png",
   },
-]
+];
 
 const HoverSpring = () => {
   return (
-    <div className='flex items-center justify-center h-600 w-90% '>
-      <div className="grid w-full grid-cols-2 gap-x-10 md:grid-cols-3">
+    <div className="flex items-center justify-center w-full h-[800px]">
+      <div className="grid w-11/12 h-[700px] grid-cols-2 gap-x-10 md:grid-cols-3">
         {ProjectsData.map((project) => {
           return (
             <motion.div
-              whileHover={{
-                y: -8,
-              }}
-              transition={{
-                type: 'spring',
-                bounce: 0.7,
-              }}
+              whileHover={{ y: -8 }}
+              transition={{ type: "spring", bounce: 0.7 }}
               key={project.id}
               className="mt-5 text-left"
             >
@@ -93,13 +86,12 @@ const HoverSpring = () => {
                 </div>
               </a>
             </motion.div>
-          )
+          );
         })}
       </div>
     </div>
-  )
-}
-
+  );
+};
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -137,9 +129,7 @@ export function DockDemo() {
             <a href="#">Privacy Policy</a>
           </li>
         </ul>
-        <p className={styles.footer}>
-          © 2024 All rights reserved. - CVWORTH
-        </p>
+        <p className={styles.footer}>© 2024 All rights reserved. - CVWORTH</p>
       </footer>
     </div>
   );
@@ -176,7 +166,19 @@ const Icons = {
     </svg>
   ),
   linkeden: (props: IconProps) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 5 1036 990" id="Linkedin"><path d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z" fill="#ffffff" className="color000000 svgShape"></path></svg>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22"
+      height="22"
+      viewBox="0 5 1036 990"
+      id="Linkedin"
+    >
+      <path
+        d="M0 120c0-33.334 11.667-60.834 35-82.5C58.333 15.833 88.667 5 126 5c36.667 0 66.333 10.666 89 32 23.333 22 35 50.666 35 86 0 32-11.333 58.666-34 80-23.333 22-54 33-92 33h-1c-36.667 0-66.333-11-89-33S0 153.333 0 120zm13 875V327h222v668H13zm345 0h222V622c0-23.334 2.667-41.334 8-54 9.333-22.667 23.5-41.834 42.5-57.5 19-15.667 42.833-23.5 71.5-23.5 74.667 0 112 50.333 112 151v357h222V612c0-98.667-23.333-173.5-70-224.5S857.667 311 781 311c-86 0-153 37-201 111v2h-1l1-2v-95H358c1.333 21.333 2 87.666 2 199 0 111.333-.667 267.666-2 469z"
+        fill="#ffffff"
+        className="color000000 svgShape"
+      ></path>
+    </svg>
   ),
 };
 
@@ -187,17 +189,17 @@ export function ThreeDCardDemo() {
         Upload Your Resume
       </h1>
       <div className="mt-10 z-10 flex items-center justify-center">
-      <AnimatedGradientText>
-        📂 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
-        <span
-          className={cn(
-            `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`,
-          )}
-        >
-          Simply Drag & Drop
-        </span>
-      </AnimatedGradientText>
-    </div>
+        <AnimatedGradientText>
+          📂 <hr className="mx-2 h-4 w-[1px] shrink-0 bg-gray-300" />{" "}
+          <span
+            className={cn(
+              `inline animate-gradient bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:var(--bg-size)_100%] bg-clip-text text-transparent`
+            )}
+          >
+            Simply Drag & Drop
+          </span>
+        </AnimatedGradientText>
+      </div>
       <CardContainer className="inter-var">
         <CardBody className="flex justify-center flex-col items-center bg-black bg-opacity-500 border-black/[0.5] border-2 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[50rem] h-auto rounded-xl p-6">
           <CardItem
@@ -211,7 +213,7 @@ export function ThreeDCardDemo() {
             translateZ="60"
             className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
           >
-            Find Your Worth 
+            Find Your Worth
           </CardItem>
           <CardItem
             translateZ="100"
@@ -232,7 +234,7 @@ export function HeroScrollDemo() {
       <div className="h-[70rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
         <ContainerScroll
           titleComponent={
-            <div className='flex items-center justify-center flex-col'>
+            <div className="flex items-center justify-center flex-col">
               <div className="z-10 flex min-h-[5rem] items-center justify-center">
                 <div
                   className={cn(
@@ -248,7 +250,7 @@ export function HeroScrollDemo() {
               <h1 className="text-4xl font-semibold bg-gradient-to-r from-white via-gray-400 to-gray-600 bg-clip-text text-transparent">
                 Learn How to Use
                 <br />
-                <SparklesText className='md:text-[6rem]' text="CVWORTH" />
+                <SparklesText className="md:text-[6rem]" text="CVWORTH" />
               </h1>
             </div>
           }
@@ -307,10 +309,9 @@ export function BackgroundGradientAnimationDemo() {
           </svg>
         </div>
       </div>
-      </BackgroundGradientAnimation>
+    </BackgroundGradientAnimation>
   );
 }
-
 
 export function NavbarDemo() {
   return (
@@ -340,19 +341,31 @@ function Navbar({ className }: { className?: string }) {
         </div>
         <div className="flex justify-center items-center flex-row">
           <div className="mr-5">
-            <MenuItem setActive={setActive} active={active} item="Home">
-            </MenuItem>
+            <MenuItem
+              setActive={setActive}
+              active={active}
+              item="Home"
+            ></MenuItem>
           </div>
           <div className="mr-5">
-            <MenuItem setActive={setActive} active={active} item="Process">
-            </MenuItem>
+            <MenuItem
+              setActive={setActive}
+              active={active}
+              item="Process"
+            ></MenuItem>
           </div>
           <div className="mr-5">
-            <MenuItem setActive={setActive} active={active} item="Upload">
-            </MenuItem>
+            <MenuItem
+              setActive={setActive}
+              active={active}
+              item="Upload"
+            ></MenuItem>
           </div>
-          <MenuItem setActive={setActive} active={active} item="Policy">
-          </MenuItem>
+          <MenuItem
+            setActive={setActive}
+            active={active}
+            item="Policy"
+          ></MenuItem>
         </div>
       </Menu>
     </div>
@@ -362,15 +375,15 @@ function Navbar({ className }: { className?: string }) {
 export default function Home() {
   return (
     <main className="w-full">
-          <div className="flex items-center justify-center flex-col">
-            <BackgroundGradientAnimationDemo />
-            <AnimatedTooltipPreview />
-            <NavbarDemo />
-            <HoverSpring />
-            <HeroScrollDemo />
-            <ThreeDCardDemo />
-            <DockDemo />
-          </div>
+      <div className="flex items-center justify-center flex-col">
+        <BackgroundGradientAnimationDemo />
+        <AnimatedTooltipPreview />
+        <NavbarDemo />
+        <HoverSpring />
+        <HeroScrollDemo />
+        <ThreeDCardDemo />
+        <DockDemo />
+      </div>
     </main>
   );
 }
