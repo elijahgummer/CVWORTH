@@ -61,9 +61,9 @@ const ProjectsData = [
 const HoverSpring = () => {
   return (
     <div className="flex flex-col overflow-hidden w-full">
-      <div className="h-[70rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
-      <div className="flex items-center justify-center w-full h-[600px]">
-        <div className="grid w-90% h-[400px] grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center">
+      <div className="h-[30rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
+      <div className="flex items-center justify-center w-full">
+        <div className="grid w-90% grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center">
           {ProjectsData.map((project) => {
             return (
               <motion.div
@@ -193,7 +193,7 @@ const Icons = {
 
 export function ThreeDCardDemo() {
   return (
-    <div className="h-[70rem] rounded-xl w-full dark:bg-black bg-black-100  dark:bg-dot-white/[1] bg-dot-white/[1] relative flex items-center justify-center flex-col">
+    <div className="h-[60rem] rounded-xl w-full dark:bg-black bg-black-100  dark:bg-dot-white/[1] bg-dot-white/[1] relative flex items-center justify-center flex-col">
       <h1 className="md:text-3xl text-3xl lg:text-8xl font-bold text-center relative z-20 pointer-events-none whitespace-pre-wrap bg-headerColor bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">
         Upload Your Resume
       </h1>
@@ -239,12 +239,12 @@ export function ThreeDCardDemo() {
 
 export function HeroScrollDemo() {
   return (
-    <div className="flex flex-col overflow-hidden">
-      <div className="h-[70rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
+    <div className="flex flex-col overflow-hidden w-full">
+      <div className="h-[50rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
         <ContainerScroll
           titleComponent={
             <div className="flex items-center justify-center flex-col">
-              <div className="z-10 flex min-h-[5rem] items-center justify-center">
+              <div className="z-10 flex items-center justify-center">
                 <div
                   className={cn(
                     "group rounded-full border border-black/5 bg-neutral-300 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
