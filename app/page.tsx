@@ -52,31 +52,17 @@ const ProjectsData = [
     image: 'https://ansubkhan.com/images/projects/prettyfolio.png',
   },
   {
-    id: 2,
+    id: 3,
     name: 'Enchant',
     description: 'A vibrant theme for Visual Studio Code.',
     link: 'https://enchant.ansubkhan.com',
     image: 'https://ansubkhan.com/images/projects/enchant.png',
   },
-  {
-    id: 3,
-    name: 'Ansubkhan.com',
-    description: 'My personal website, blogs and newsletter.',
-    link: 'https://ansubkhan.com',
-    image: 'https://ansubkhan.com/images/projects/portfolio.png',
-  },
-  {
-    id: 4,
-    name: 'Quote Vault',
-    description: 'Social media, but for sharing quotes.',
-    link: 'https://quote-vault.vercel.app',
-    image: 'https://ansubkhan.com/images/projects/quote-vault.png',
-  },
 ]
 
 const HoverSpring = () => {
   return (
-    <div>
+    <div className='flex items-center justify-center h-600 w-90% '>
       <div className="grid w-full grid-cols-2 gap-x-10 md:grid-cols-3">
         {ProjectsData.map((project) => {
           return (
