@@ -86,6 +86,7 @@ const config: Config = {
       },
       colors: {
         headerColor : '#f2f2f2',
+        gridLines : '#181818',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

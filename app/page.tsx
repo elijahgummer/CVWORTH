@@ -60,34 +60,43 @@ const ProjectsData = [
 
 const HoverSpring = () => {
   return (
-    <div className="flex items-center justify-center w-full h-[600px]">
-      <div className="grid w-90% h-[400px] grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center">
-        {ProjectsData.map((project) => {
-          return (
-            <motion.div
-              whileHover={{ y: -8 }}
-              transition={{ type: "spring", bounce: 0.7 }}
-              key={project.id}
-              className="mt-5 text-center"
-            >
-              <a className="flex items-center justify-center flex-col" target="_blank" rel="noopener noreferrer" href={project.link}>
-                <Image
-                  src={project.image}
-                  width={30}
-                  height={30}
-                  className="mb-3 rounded-lg border-gray-400 dark:border"
-                  alt={project.name}
-                />
-                <div className="mb-1 text-sm font-medium text-white dark:text-gray-100">
-                  {project.name}
-                </div>
-                <div className="max-w-[250px] text-sm font-normal text-gray-500 dark:text-gray-500">
-                  {project.description}
-                </div>
-              </a>
-            </motion.div>
-          );
-        })}
+    <div className="flex flex-col overflow-hidden w-full">
+      <div className="h-[70rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
+      <div className="flex items-center justify-center w-full h-[600px]">
+        <div className="grid w-90% h-[400px] grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center">
+          {ProjectsData.map((project) => {
+            return (
+              <motion.div
+                whileHover={{ y: -8 }}
+                transition={{ type: "spring", bounce: 0.7 }}
+                key={project.id}
+                className="mt-5 text-center"
+              >
+                <a
+                  className="flex items-center justify-center flex-col"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.link}
+                >
+                  <Image
+                    src={project.image}
+                    width={30}
+                    height={30}
+                    className="mb-3 rounded-lg border-gray-400 dark:border"
+                    alt={project.name}
+                  />
+                  <div className="mb-1 text-sm font-medium text-white dark:text-gray-100">
+                    {project.name}
+                  </div>
+                  <div className="max-w-[250px] text-sm font-normal text-gray-500 dark:text-gray-500">
+                    {project.description}
+                  </div>
+                </a>
+              </motion.div>
+            );
+          })}
+        </div>
+      </div>
       </div>
     </div>
   );
