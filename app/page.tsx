@@ -292,7 +292,7 @@ export function BackgroundGradientAnimationDemo() {
   const words = ["GREAT", "VALUABLE", "EMPOWERING", "WORTHWHILE"];
   return (
     <BackgroundGradientAnimation>
-      <div className="relative w-full h-screen flex items-center justify-center text-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl flex-col">
+      <div className="relative w-full h-screen flex items-center justify-centertext-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl flex-col">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <BlurIn
             word="CVWORTH IS"
@@ -348,7 +348,7 @@ function Navbar({ className }: { className?: string }) {
             src="/logo.png"
             alt="Logo"
           />
-          <h1 className="font-bold -m-3 text-white font-bold">CVWORTH</h1>
+          <h1 className="font-bold -m-3 text-white">CVWORTH</h1>
         </div>
         <div className="flex justify-center items-center flex-row">
           <div className="mr-5">
