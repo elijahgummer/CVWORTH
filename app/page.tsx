@@ -61,16 +61,16 @@ const ProjectsData = [
 const HoverSpring = () => {
   return (
     <div className="flex items-center justify-center w-full h-[600px]">
-      <div className="grid w-90% h-[400px] grid-cols-2 gap-x-10 md:grid-cols-3">
+      <div className="grid w-90% h-[400px] grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center">
         {ProjectsData.map((project) => {
           return (
             <motion.div
               whileHover={{ y: -8 }}
               transition={{ type: "spring", bounce: 0.7 }}
               key={project.id}
-              className="mt-5 text-left"
+              className="mt-5 text-center"
             >
-              <a target="_blank" rel="noopener noreferrer" href={project.link}>
+              <a className="flex items-center justify-center flex-col" target="_blank" rel="noopener noreferrer" href={project.link}>
                 <Image
                   src={project.image}
                   width={30}
@@ -78,7 +78,7 @@ const HoverSpring = () => {
                   className="mb-3 rounded-lg border-gray-400 dark:border"
                   alt={project.name}
                 />
-                <div className="mb-1 text-sm font-medium text-gray-900 dark:text-gray-100">
+                <div className="mb-1 text-sm font-medium text-white dark:text-gray-100">
                   {project.name}
                 </div>
                 <div className="max-w-[250px] text-sm font-normal text-gray-500 dark:text-gray-500">
