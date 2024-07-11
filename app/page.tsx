@@ -37,7 +37,7 @@ const people = [
 const ProjectsData = [
   {
     id: 1,
-    name: "syntaxUI",
+    name: "Resume Worth Estimation",
     description: "Ready-to-use UI elements designed for rapid development.",
     link: "https://syntaxui.com",
     image: "https://ansubkhan.com/images/projects/syntaxUI.svg",
