@@ -65,8 +65,8 @@ const HoverSpring = () => {
       <div className="h-[30rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
       <div className="flex items-center justify-center w-full flex-col">
         <h1 className="text-headerColor font-bold lg:text-5xl">Discover Our Features</h1>
-        <h1 className="text-subHeaderColor font-bold lg:text-2xl">Explore how we enhance your resume</h1>
-        <div className="grid w-90% grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center">
+        <h1 className="text-subHeaderColor font-bold lg:text-2xl mt-5">Explore how we enhance your resume</h1>
+        <div className="grid w-90% grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center mt-10">
           {ProjectsData.map((project) => {
             return (
               <motion.div
