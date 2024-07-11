@@ -38,7 +38,7 @@ const ProjectsData = [
   {
     id: 1,
     name: "Resume Worth Estimation",
-    description: "Ready-to-use UI elements designed for rapid development.",
+    description: "Calculate the dollar worth of your resume. Compare with industry standards and job market trends.",
     link: "https://syntaxui.com",
     image: "https://ansubkhan.com/images/projects/syntaxUI.svg",
   },
