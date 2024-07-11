@@ -67,6 +67,10 @@ html {
   flex-direction: column;
   width: 100%;
 }
+.dollar {
+  background-color: #161616;
+
+}
 .custum-file-upload .icon {
   display: flex;
   align-items: center;

@@ -25,6 +25,7 @@ import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
 
+
 const people = [
   {
     id: 1,
@@ -40,7 +41,7 @@ const ProjectsData = [
     name: "Resume Worth Estimation",
     description: "Calculate the dollar worth of your resume. Compare with industry standards and job market trends.",
     link: "https://syntaxui.com",
-    image: "https://ansubkhan.com/images/projects/syntaxUI.svg",
+    image: "/dollarsign.svg",
   },
   {
     id: 2,
