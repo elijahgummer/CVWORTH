@@ -44,8 +44,8 @@ const ProjectsData = [
   },
   {
     id: 2,
-    name: "Prettyfolio",
-    description: "A curated collection of portfolios for inspiration.",
+    name: "Resume Improvement Suggestions",
+    description: "Optimise content and format for maximum impact. Receive personalised tips for better phrasing and layout.",
     link: "https://prettyfolio.com",
     image: "https://ansubkhan.com/images/projects/prettyfolio.png",
   },
