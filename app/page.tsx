@@ -51,8 +51,8 @@ const ProjectsData = [
   },
   {
     id: 3,
-    name: "Enchant",
-    description: "A vibrant theme for Visual Studio Code.",
+    name: "Skills Assessment",
+    description: "Identify key skills and match them to desired roles. Highlight skill gaps crucial for career advancement.",
     link: "https://enchant.ansubkhan.com",
     image: "https://ansubkhan.com/images/projects/enchant.png",
   },
