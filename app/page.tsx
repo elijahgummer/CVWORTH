@@ -250,7 +250,7 @@ export function HeroScrollDemo() {
               <div className="z-10 flex items-center justify-center">
                 <div
                   className={cn(
-                    "group rounded-full border border-black/5 bg-neutral-300 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+                    "group rounded-full border m-10 border-black/5 bg-neutral-300 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800"
                   )}
                 >
                   <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
@@ -262,7 +262,7 @@ export function HeroScrollDemo() {
               <h1 className="text-4xl font-semibold bg-gradient-to-r from-white via-gray-400 to-gray-600 bg-clip-text text-transparent">
                 Learn How to Use
                 <br />
-                <SparklesText className="md:text-[6rem]" text="CVWORTH" />
+                <SparklesText className="mb-10 md:text-[6rem]" text="CVWORTH" />
               </h1>
             </div>
           }
