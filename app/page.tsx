@@ -83,8 +83,8 @@ const HoverSpring = () => {
                 >
                   <Image
                     src={project.image}
-                    width={50}
-                    height={50}
+                    width={40}
+                    height={40}
                     className="mb-3 rounded-lg border-gray-400 dark:border"
                     alt={project.name}
                   />
