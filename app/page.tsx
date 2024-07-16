@@ -48,7 +48,7 @@ const ProjectsData = [
     name: "Resume Improvement Suggestions",
     description: "Optimise content and format for maximum impact. Receive personalised tips for better phrasing and layout.",
     link: "https://prettyfolio.com",
-    image: "https://ansubkhan.com/images/projects/prettyfolio.png",
+    image: "/up.svg",
   },
   {
     id: 3,
