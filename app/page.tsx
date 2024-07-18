@@ -343,7 +343,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <div className={cn("fixed top-5 inset-x-0 w-100% mx-auto z-50", className)}>
+    <div className={cn("fixed top-5 inset-x-0 w-50% mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <div className="flex items-center justify-start">
           <Image
@@ -383,7 +383,7 @@ function Navbar({ className }: { className?: string }) {
             item="Policy"
           ></MenuItem>
         </div>
-        <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group bg-gray-900 hover:bg-gray-950 transition-all duration-200 ease-in-out hover:ring-2 hover:ring-offset-2 hover:ring-gray-900">
+        <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group bg-grey-350 hover:bg-gray-550 transition-all duration-200 ease-in-out hover:ring-2 hover:ring-offset-2 hover:ring-white-800">
           <svg
             className="mr-2 text-white"
             stroke-linejoin="round"
