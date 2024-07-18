@@ -25,7 +25,6 @@ import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
 
-
 const people = [
   {
     id: 1,
@@ -39,21 +38,24 @@ const ProjectsData = [
   {
     id: 1,
     name: "Resume Worth Estimation",
-    description: "Calculate the dollar worth of your resume. Compare with industry standards and job market trends.",
+    description:
+      "Calculate the dollar worth of your resume. Compare with industry standards and job market trends.",
     link: "https://syntaxui.com",
     image: "/dollarsign.svg",
   },
   {
     id: 2,
     name: "Resume Improvement Suggestions",
-    description: "Optimise content and format for maximum impact. Receive personalised tips for better phrasing and layout.",
+    description:
+      "Optimise content and format for maximum impact. Receive personalised tips for better phrasing and layout.",
     link: "https://prettyfolio.com",
     image: "/up.svg",
   },
   {
     id: 3,
     name: "Skills Assessment",
-    description: "Identify key skills and match them to desired roles. Highlight skill gaps crucial for career advancement.",
+    description:
+      "Identify key skills and match them to desired roles. Highlight skill gaps crucial for career advancement.",
     link: "https://enchant.ansubkhan.com",
     image: "/briefcase.svg",
   },
@@ -63,43 +65,47 @@ const HoverSpring = () => {
   return (
     <div className="flex flex-col overflow-hidden w-full">
       <div className="h-[35rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
-      <div className="flex items-center justify-center w-full flex-col">
-        <h1 className="text-headerColor font-bold lg:text-5xl">Discover Our Features</h1>
-        <h1 className="text-subHeaderColor font-bold lg:text-2xl mt-5">Explore how we enhance your resume</h1>
-        <div className="grid w-90% grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center mt-10">
-          {ProjectsData.map((project) => {
-            return (
-              <motion.div
-                whileHover={{ y: -8 }}
-                transition={{ type: "spring", bounce: 0.7 }}
-                key={project.id}
-                className="mt-5 text-center"
-              >
-                <a
-                  className="flex items-center justify-center flex-col"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={project.link}
+        <div className="flex items-center justify-center w-full flex-col">
+          <h1 className="text-headerColor font-bold lg:text-5xl">
+            Discover Our Features
+          </h1>
+          <h1 className="text-subHeaderColor font-bold lg:text-2xl mt-5">
+            Explore how we enhance your resume
+          </h1>
+          <div className="grid w-90% grid-cols-2 gap-x-10 md:grid-cols-3 items-center justify-center mt-10">
+            {ProjectsData.map((project) => {
+              return (
+                <motion.div
+                  whileHover={{ y: -8 }}
+                  transition={{ type: "spring", bounce: 0.7 }}
+                  key={project.id}
+                  className="mt-5 text-center"
                 >
-                  <Image
-                    src={project.image}
-                    width={40}
-                    height={40}
-                    className="mb-3 rounded-lg border-gray-400 dark:border"
-                    alt={project.name}
-                  />
-                  <div className="mb-1 text-sm font-medium text-white dark:text-gray-100">
-                    {project.name}
-                  </div>
-                  <div className="max-w-[250px] text-sm font-normal text-gray-500 dark:text-gray-500">
-                    {project.description}
-                  </div>
-                </a>
-              </motion.div>
-            );
-          })}
+                  <a
+                    className="flex items-center justify-center flex-col"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={project.link}
+                  >
+                    <Image
+                      src={project.image}
+                      width={40}
+                      height={40}
+                      className="mb-3 rounded-lg border-gray-400 dark:border"
+                      alt={project.name}
+                    />
+                    <div className="mb-1 text-sm font-medium text-white dark:text-gray-100">
+                      {project.name}
+                    </div>
+                    <div className="max-w-[250px] text-sm font-normal text-gray-500 dark:text-gray-500">
+                      {project.description}
+                    </div>
+                  </a>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
-      </div>
       </div>
     </div>
   );
@@ -337,9 +343,7 @@ function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
 
   return (
-    <div
-      className={cn("fixed top-5 inset-x-0 w-100% mx-auto z-50", className)}
-    >
+    <div className={cn("fixed top-5 inset-x-0 w-100% mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <div className="flex items-center justify-start">
           <Image
@@ -379,6 +383,41 @@ function Navbar({ className }: { className?: string }) {
             item="Policy"
           ></MenuItem>
         </div>
+        <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group bg-gray-900 hover:bg-gray-950 transition-all duration-200 ease-in-out hover:ring-2 hover:ring-offset-2 hover:ring-gray-900">
+          <svg
+            class="mr-2 text-white"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            viewBox="0 0 24 24"
+            height="24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+            <path d="M9 18c-4.51 2-5-2-7-2"></path>
+          </svg>
+          <span className="text-white">Star on Github</span>
+          <span class="flex items-center ml-4 group-hover:text-yellow-500 transition-colors duration-200 ease-in-out">
+            <svg
+              className="text-yellow-500"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-width="2"
+              stroke="currentColor"
+              fill="none"
+              viewBox="0 0 24 24"
+              height="24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+            <span class="text-white ml-2">612</span>
+          </span>
+        </button>
       </Menu>
     </div>
   );
