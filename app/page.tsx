@@ -354,7 +354,7 @@ function Navbar({ className }: { className?: string }) {
             alt="Logo"
           />
           <h1 className="font-bold -m-3 text-white text-1xl ">CVWORTH</h1>
-          <div className="-mr-90 flex justify-start items-center flex-row">
+          <div className="ml-20 flex justify-start items-center flex-row">
           <div className="mr-5">
             <MenuItem
               setActive={setActive}
