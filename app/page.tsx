@@ -400,7 +400,7 @@ function Navbar({ className }: { className?: string }) {
             <path d="M9 18c-4.51 2-5-2-7-2"></path>
           </svg>
           <span className="text-white">Star on Github</span>
-          <span class="flex items-center ml-4 group-hover:text-yellow-500 transition-colors duration-200 ease-in-out">
+          <span className="flex items-center ml-4 group-hover:text-yellow-500 transition-colors duration-200 ease-in-out">
             <svg
               className="text-yellow-500"
               stroke-linejoin="round"
