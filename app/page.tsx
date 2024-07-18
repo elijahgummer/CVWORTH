@@ -383,7 +383,7 @@ function Navbar({ className }: { className?: string }) {
             item="Policy"
           ></MenuItem>
         </div>
-        <button className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group bg-grey-350 hover:bg-gray-550 transition-all duration-200 ease-in-out hover:ring-2 hover:ring-offset-2 hover:ring-white-800">
+        <button className="inline-flex items-center justify-center whitespace-nowrap rounded-xl text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 group bg-grey-350 hover:bg-gray-550 transition-all duration-200 ease-in-out hover:ring-2 hover:ring-offset-2 hover:ring-white">
           <svg
             className="mr-2 text-white"
             stroke-linejoin="round"
