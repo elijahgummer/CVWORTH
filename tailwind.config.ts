@@ -87,7 +87,8 @@ const config: Config = {
       colors: {
         headerColor : '#f2f2f2',
         subHeaderColor : '#E7E0C3',
-        navbarTabs: '##C8C8C8',
+        navbarTabs: '#C8C8C8',
+        navbarBackgroundColor: '#1E1E1E',
         gridLines : '#181818',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
