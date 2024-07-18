@@ -328,7 +328,7 @@ export function BackgroundGradientAnimationDemo() {
 export function NavbarDemo() {
   return (
     <div className="relative flex items-center justify-center text-center">
-      <Navbar className="top-2 " />
+      <Navbar className="top-0" />
     </div>
   );
 }
