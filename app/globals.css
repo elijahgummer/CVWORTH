@@ -47,6 +47,19 @@ html {
   clip-path: ellipse(75% 50% at center);
   filter: blur(100px);
 }
+
+.navbar {
+  transition: top 0.3s;
+}
+
+.navbar.hidden {
+  top: -60px; /* Adjust this value based on your navbar's height */
+}
+
+.navbar.visible {
+  top: 0;
+}
+
 .custum-file-upload {
   height: 110px;
   width: 250px;
@@ -71,6 +84,7 @@ html {
   background-color: #161616;
 
 }
+
 .custum-file-upload .icon {
   display: flex;
   align-items: center;
