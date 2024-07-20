@@ -53,7 +53,7 @@ html {
 }
 
 .navbar.hidden {
-  top: -60px; /* Adjust this value based on your navbar's height */
+  background: none; /* Adjust this value based on your navbar's height */
 }
 
 .navbar.visible {

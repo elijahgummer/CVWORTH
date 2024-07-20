@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import ResumeAnalyzerApp from "./components/ResumeAnalyzerApp";
 import styles from "./styles/Home.module.css";
@@ -332,9 +332,10 @@ export function BackgroundGradientAnimationDemo() {
 }
 
 export function NavbarDemo() {
+  const navbarClass = `navbar ${showNavbar ? 'visible' : 'hidden'}`;
   return (
     <div className="relative flex items-center justify-center text-center">
-      <Navbar className="top-0" />
+      <Navbar className={navbarClass} />
     </div>
   );
 }
@@ -448,6 +449,7 @@ export default function Home() {
         <HeroScrollDemo />
         <ThreeDCardDemo />
         <DockDemo />
+        
       </div>
     </main>
   );
