@@ -340,8 +340,22 @@ export function NavbarDemo() {
 }
 
 function Navbar({ className }: { className?: string }) {
+  const [showNavbar, setShowNavbar] = useState(true);
   const [active, setActive] = useState<string | null>(null);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const shouldShowNavbar = currentScrollPos < 100; // Adjust this value as needed
+      setShowNavbar(shouldShowNavbar);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
     <div className={cn("fixed top-5 inset-x-0 w-70% mx-auto z-50", className)}>
       <Menu setActive={setActive}>
