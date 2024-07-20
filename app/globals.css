@@ -57,7 +57,7 @@ html {
 }
 
 .navbar.visible {
-  top: 0;
+  background: block;
 }
 
 .custum-file-upload {
