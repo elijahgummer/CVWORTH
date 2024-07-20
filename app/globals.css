@@ -54,6 +54,7 @@ html {
 
 .scrolled {
   background: rgba(0, 0, 0, 0.8); /* Background color when scrolled */
+  border-bottom: 2px solid #141414;
 }
 
 .custum-file-upload {
