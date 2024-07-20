@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from 'react';
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -67,10 +67,29 @@ export const Menu = ({
   setActive: (item: string | null) => void;
   children: React.ReactNode;
 }) => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar?.classList.add('scrolled');
+      } else {
+        navbar?.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <nav
+      id="navbar"
       onMouseLeave={() => setActive(null)} // resets the state
-      className="navbar relative border-b-2 border-b-#0a0a0a bg-navbarBackgroundColor bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80 border  shadow-input flex justify-between space-x-4 px-8 py-4 w-[100%] mx-auto"
+      className="navbar relative border-b-2 border-b-#0a0a0a bg-navbarBackgroundColor bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80 border shadow-input flex justify-between space-x-4 px-8 py-4 w-[100%] mx-auto"
     >
       {children}
     </nav>

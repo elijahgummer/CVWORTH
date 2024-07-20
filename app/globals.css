@@ -52,12 +52,8 @@ html {
   transition: top 0.3s;
 }
 
-.navbar.hidden {
-  background: none; /* Adjust this value based on your navbar's height */
-}
-
-.navbar.visible {
-  background: block;
+.scrolled {
+  background: rgba(0, 0, 0, 0.8); /* Background color when scrolled */
 }
 
 .custum-file-upload {
