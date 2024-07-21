@@ -153,7 +153,6 @@ const ResumeUploader: React.FC<Props> = ({ setResumeText, setIsLoading }) => {
           </div>
           <div className="text flex-col">
             <span>Click to upload resume</span>
-            <span className="text-sm color-white"></span>
           </div>
         </label>
       </div>
