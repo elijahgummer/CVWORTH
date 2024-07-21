@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const repoOwner = 'elijahgummer'; // Replace with your GitHub username
 const repoName = 'CVWORTH'; // Replace with your repository name
-const token = 'YOUR_PERSONAL_ACCESS_TOKEN'; // Replace with your GitHub personal access token
+const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
 const StarButton: React.FC = () => {
   const [starCount, setStarCount] = useState<number | null>(null);
