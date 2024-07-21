@@ -43,7 +43,7 @@ export const MenuItem = ({
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="overflow-hidde shadow-xl"
+                className="overflow-hidden"
               >
                 <motion.div
                   layout // layout ensures smooth animation
