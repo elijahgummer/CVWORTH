@@ -7,7 +7,6 @@
   border: 2px dashed #ccc;
   border-radius: 8px;
   transition: border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0 24px #f4f0f1;
 }
 
 .fileUploadBtnContainer.dragOver {
