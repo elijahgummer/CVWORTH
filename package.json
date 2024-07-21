@@ -22,6 +22,7 @@
     "@vercel/analytics": "^1.2.2",
     "ai": "^3.0.13",
     "autoprefixer": "^10.4.17",
+    "axios": "^1.7.2",
     "cal-sans": "^1.0.1",
     "canvas-confetti": "^1.9.3",
     "class-variance-authority": "^0.7.0",
