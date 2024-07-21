@@ -2,10 +2,10 @@
 
 CVWorth is an AI-powered web application designed to analyse your resume's worth and provide actionable feedback to help you improve.
 
-##UI 
+#UI 
 ![localhost_3000_ (2)](https://github.com/user-attachments/assets/0d6ecd78-4a2a-445b-a07e-0e41bd36d3d2)
 
-##Analysis UI
+#Analysis UI
 ![localhost_3000_ (3)](https://github.com/user-attachments/assets/4cbb8524-4637-4623-98bf-ac81efcb9c8b)
 
 ## Features
