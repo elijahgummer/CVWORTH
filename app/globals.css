@@ -239,6 +239,9 @@ html {
   filter: blur(8px);
   z-index: -1;
 }
+.footerContainer{
+
+}
 footer {
   display: flex;
   align-items: center;
