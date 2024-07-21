@@ -240,7 +240,8 @@ html {
   z-index: -1;
 }
 .footerContainer{
-
+  border-top: 2px solid #141414;
+  width: 100%;
 }
 footer {
   display: flex;
