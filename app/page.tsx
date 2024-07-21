@@ -219,8 +219,8 @@ export function ThreeDCardDemo() {
         </AnimatedGradientText>
       </div>
       <CardContainer className="inter-var">
-        <CardBody className="flex justify-center flex-col items-center bg-black bg-opacity-500 border-black/[0.5] border-2 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[50rem] h-auto rounded-xl p-6">
-          <CardItem
+      <CardBody className="flex justify-center flex-col items-center bg-black/20 border-black/[0.5] border-2 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[50rem] h-auto rounded-xl p-6">
+      <CardItem
             translateZ="50"
             className="text-2xl font-bold text-neutral-400 dark:text-white"
           >
