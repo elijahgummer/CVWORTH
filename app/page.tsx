@@ -25,23 +25,8 @@ import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
 import StarButton from './components/StarButton';
-import MyApp from '../lib/clerk'; // Adjust the path if necessary
-import { SignInButton } from '@clerk/nextjs';
-import { SignOutButton } from '@clerk/nextjs';
-import { useUser } from '@clerk/nextjs';
 
 
-const MySignInButton = () => {
-  return <SignInButton />;
-};
-
-const MySignOutButton = () => {
-  return <SignOutButton />;
-};  
-
-function AppWrapper({ Component, pageProps }: AppProps) {
-  return <MyApp Component={Component} pageProps={pageProps} />;
-}
 
 const people = [
   {
@@ -409,7 +394,6 @@ function Navbar({ className }: { className?: string }) {
 }
 
 export default function Home() {
-  const { isSignedIn, user } = useUser();
   return (
     <main className="w-full">
       <div className="flex items-center justify-center flex-col">
@@ -420,16 +404,6 @@ export default function Home() {
         <HeroScrollDemo />
         <ThreeDCardDemo />
         <DockDemo />
-        <div>
-      <h1>Welcome to CVWorth</h1>
-      {!isSignedIn && <MySignInButton />}
-      {isSignedIn && (
-        <div>
-          <p>Hello, {user?.firstName}!</p>
-          <MySignOutButton />
-        </div>
-      )}
-    </div>
       </div>
     </main>
   );
