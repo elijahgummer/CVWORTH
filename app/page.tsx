@@ -404,7 +404,6 @@ export default function Home() {
         <HeroScrollDemo />
         <ThreeDCardDemo />
         <DockDemo />
-        <ThemeToggle />
       </div>
     </main>
   );
