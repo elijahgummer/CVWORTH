@@ -25,6 +25,7 @@ import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
 import StarButton from './components/StarButton';
+import ThemeToggle from './components/themeToggle';
 
 
 const people = [
@@ -403,7 +404,7 @@ export default function Home() {
         <HeroScrollDemo />
         <ThreeDCardDemo />
         <DockDemo />
-        
+        <ThemeToggle />
       </div>
     </main>
   );
