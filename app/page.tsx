@@ -123,7 +123,7 @@ export function DockDemo() {
         <div className="social">
           <Dock>
             <DockIcon>
-              <Icons.gitHub className="h-6 w-6" />
+              <Icons.gitHub href="https://github.com/elijahgummer" className="h-6 w-6" />
             </DockIcon>
             <DockIcon>
               <Icons.twitter className="h-6 w-6" />
