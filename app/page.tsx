@@ -408,7 +408,7 @@ export default function Home() {
       <div className="flex items-center justify-center flex-col">
         <BackgroundGradientAnimationDemo />
         <AnimatedTooltipPreview />
-        <NavbarDemo />
+        {/* <NavbarDemo /> */}
         <HoverSpring />
         <HeroScrollDemo />
         <ThreeDCardDemo />

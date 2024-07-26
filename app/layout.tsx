@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Analytics } from '@vercel/analytics/react';
-import { ClerkProvider, SignInButton, SignUpButton, SignedIn, SignedOut, UserButton } from '@clerk/nextjs';
+import { ClerkProvider, SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, RedirectToSignIn } from '@clerk/nextjs';
 
 export const metadata: Metadata = {
   title: 'CVWORTH | Resume Analyser',
@@ -33,8 +33,8 @@ export default function RootLayout({
             <div className="text-lg font-bold">CVWORTH</div>
             <nav>
               <SignedOut>
-                <SignInButton />
-                <SignUpButton />
+                <SignInButton redirectUrl="/page" />
+                <SignUpButton redirectUrl="/page" />
               </SignedOut>
               <SignedIn>
                 <UserButton />
