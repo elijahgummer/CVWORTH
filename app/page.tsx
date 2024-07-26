@@ -125,7 +125,7 @@ export function DockDemo() {
             <DockIcon href="https://github.com/elijahgummer">
               <Icons.gitHub className="h-6 w-6" />
             </DockIcon>
-            <DockIcon href="">
+            <DockIcon href="https://twitter.com/codedesigneli">
               <Icons.twitter className="h-6 w-6" />
             </DockIcon>
             <DockIcon>
