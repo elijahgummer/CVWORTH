@@ -33,6 +33,7 @@ const people = [
     id: 1,
     name: "Elijah Gummer",
     designation: "Full-Stack Devloper",
+    href: "https://twitter.com/codedesigneli",
     image: "/picofme.png",
   },
 ];
@@ -293,7 +294,7 @@ export function HeroScrollDemo() {
 export function AnimatedTooltipPreview() {
   return (
     <div className="tooltipContainer flex flex-row items-center justify-center mb-10 w-full">
-      <AnimatedTooltip href="https://twitter.com/codedesigneli" items={people} />
+      <AnimatedTooltip items={people} />
     </div>
   );
 }
