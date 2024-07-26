@@ -32,7 +32,7 @@ import {
   SignedOut,
   UserButton
 } from '@clerk/nextjs'
-import '@/styles/globals.css'
+
 
 
 
@@ -343,13 +343,13 @@ export function BackgroundGradientAnimationDemo() {
   );
 }
 
-export function NavbarDemo() {
-  return (
-    <div className="relative flex items-center justify-center text-center">
-      <Navbar className="top-0" />
-    </div>
-  );
-}
+// export function NavbarDemo() {
+//   return (
+//     <div className="relative flex items-center justify-center text-center">
+//       <Navbar className="top-0" />
+//     </div>
+//   );
+// }
 
 function Navbar({ className }: { className?: string }) {
 
