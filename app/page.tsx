@@ -122,7 +122,7 @@ export function DockDemo() {
       <footer>
         <div className="social">
           <Dock>
-            <DockIcon>
+            <DockIcon href="https://github.com/elijahgummer">
               <Icons.gitHub className="h-6 w-6" />
             </DockIcon>
             <DockIcon>
