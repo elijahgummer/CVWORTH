@@ -63,6 +63,7 @@ export interface DockIconProps {
   distance?: number;
   mouseX?: any;
   className?: string;
+  href?: string; // Add href prop
   children?: React.ReactNode;
   props?: PropsWithChildren;
 }
@@ -73,6 +74,7 @@ const DockIcon = ({
   distance = DEFAULT_DISTANCE,
   mouseX,
   className,
+  href, // Destructure href prop
   children,
   ...props
 }: DockIconProps) => {
@@ -96,7 +98,7 @@ const DockIcon = ({
     damping: 12,
   });
 
-  return (
+  const content = (
     <motion.div
       ref={ref}
       style={{ width }}
@@ -109,7 +111,17 @@ const DockIcon = ({
       {children}
     </motion.div>
   );
+
+  // Conditionally wrap content in an anchor tag if href is provided
+  return href ? (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {content}
+    </a>
+  ) : (
+    content
+  );
 };
+
 
 DockIcon.displayName = "DockIcon";
 
