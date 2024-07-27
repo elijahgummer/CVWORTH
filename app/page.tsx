@@ -35,28 +35,6 @@ import {
 import { useAuth } from '@clerk/nextjs';
 import { useRouter } from 'next/router';
 
-export default function Page() {
-  const { isLoaded, userId } = useAuth();
-  const router = useRouter();
-
-  useEffect(() => {
-    if (isLoaded && !userId) {
-      router.push('/sign-in'); // Redirect to sign-in if not authenticated
-    }
-  }, [isLoaded, userId, router]);
-
-  return (
-    <div className="container mx-auto p-4">
-      <h1>Welcome to CVWORTH</h1>
-      <p>Measure how much your resume is worth!</p>
-      {/* Add your content here */}
-    </div>
-  );
-}
-
-
-
-
 const people = [
   {
     id: 1,
