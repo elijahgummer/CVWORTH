@@ -408,7 +408,6 @@ const Navbar = ({ className }: { className?: string }) => {
             <UserButton afterSignOutUrl="/" />
           </div>
         </div>
-        <StarButton />
       </Menu>
     </div>
   );
