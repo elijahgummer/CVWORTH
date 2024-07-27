@@ -30,7 +30,19 @@ export default function RootLayout({
             fontSans.variable
           )}
         >
-          <Header></Header>
+          <Header />
+          <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
+            <div className="text-lg font-bold">CVWORTH</div>
+            <nav>
+              <SignedOut>
+                <SignInButton redirectUrl="/page" />
+                <SignUpButton redirectUrl="/page" />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </nav>
+          </header>
           <main>
             {children}
           </main>
