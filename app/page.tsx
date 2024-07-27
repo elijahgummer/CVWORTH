@@ -30,10 +30,11 @@ import {
   SignInButton,
   SignedIn,
   SignedOut,
-  UserButton
+  UserButton,
 } from '@clerk/nextjs'
 import { useAuth } from '@clerk/nextjs';
 import { useRouter } from 'next/router';
+import Link from "next/link";
 
 const people = [
   {
@@ -342,17 +343,18 @@ export function BackgroundGradientAnimationDemo() {
   );
 }
 
-// export function NavbarDemo() {
-//   return (
-//     <div className="relative flex items-center justify-center text-center">
-//       <Navbar className="top-0" />
-//     </div>
-//   );
-// }
+export function NavbarDemo() {
+  return (
+    <div className="relative flex items-center justify-center text-center">
+      <Navbar className="top-0" />
+    </div>
+  );
+}
 
-function Navbar({ className }: { className?: string }) {
-
+const Navbar = ({ className }: { className?: string }) => {
   const [active, setActive] = useState<string | null>(null);
+  const { userId } = useAuth();
+
   return (
     <div className={cn("fixed top-5 inset-x-0 w-70% mx-auto z-50", className)}>
       <Menu setActive={setActive}>
@@ -364,42 +366,54 @@ function Navbar({ className }: { className?: string }) {
             src="/logo.png"
             alt="Logo"
           />
-          <h1 className="font-bold -m-3 text-white text-1xl ">CVWORTH</h1>
+          <h1 className="font-bold -m-3 text-white text-1xl">CVWORTH</h1>
           <div className="ml-20 flex justify-start items-center flex-row">
-          <div className="mr-5">
-            <MenuItem
-              setActive={setActive}
-              active={active}
-              item="Home"
-            ></MenuItem>
+            <div className="mr-5">
+              <MenuItem setActive={setActive} active={active} item="Home">
+                <Link href="/">Home</Link>
+              </MenuItem>
+            </div>
+            <div className="mr-5">
+              <MenuItem setActive={setActive} active={active} item="Process">
+                <Link href="/process">Process</Link>
+              </MenuItem>
+            </div>
+            <div className="mr-5">
+              <MenuItem setActive={setActive} active={active} item="Upload">
+                <Link href="/upload">Upload</Link>
+              </MenuItem>
+            </div>
+            <MenuItem setActive={setActive} active={active} item="Policy">
+              <Link href="/policy">Policy</Link>
+            </MenuItem>
           </div>
-          <div className="mr-5">
-            <MenuItem
-              setActive={setActive}
-              active={active}
-              item="Process"
-            ></MenuItem>
-          </div>
-          <div className="mr-5">
-            <MenuItem
-              setActive={setActive}
-              active={active}
-              item="Upload"
-            ></MenuItem>
-          </div>
-          <MenuItem
-            setActive={setActive}
-            active={active}
-            item="Policy"
-          ></MenuItem>
         </div>
+        <div className="flex items-center">
+          {!userId && (
+            <>
+              <MenuItem setActive={setActive} active={active} item="Sign In">
+                <Link href="sign-in" className="text-gray-300 hover:text-white mr-4">Sign In</Link>
+              </MenuItem>
+              <MenuItem setActive={setActive} active={active} item="Sign Up">
+                <Link href="sign-up" className="text-gray-300 hover:text-white mr-4">Sign Up</Link>
+              </MenuItem>
+            </>
+          )}
+          {userId && (
+            <MenuItem setActive={setActive} active={active} item="Profile">
+              <Link href="profile" className="text-gray-300 hover:text-white mr-4">Profile</Link>
+            </MenuItem>
+          )}
+          <div className="ml-auto">
+            <UserButton afterSignOutUrl="/" />
+          </div>
         </div>
-
         <StarButton />
       </Menu>
     </div>
   );
-}
+};
+
 
 export default function Home() {
   return (
@@ -407,7 +421,7 @@ export default function Home() {
       <div className="flex items-center justify-center flex-col">
         <BackgroundGradientAnimationDemo />
         <AnimatedTooltipPreview />
-        {/* <NavbarDemo /> */}
+        <NavbarDemo />
         <HoverSpring />
         <HeroScrollDemo />
         <ThreeDCardDemo />
