@@ -4,7 +4,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Analytics } from '@vercel/analytics/react';
 import { ClerkProvider, SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, RedirectToSignIn } from '@clerk/nextjs';
-
+import Header from './componentss/Header';
 
 export const metadata: Metadata = {
   title: 'CVWORTH | Resume Analyser',
@@ -23,18 +23,31 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <ClerkProvider>
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
             fontSans.variable
           )}
         >
-         
+          <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
+            <div className="text-lg font-bold">CVWORTH</div>
+            <nav>
+              <SignedOut>
+                <SignInButton redirectUrl="/page" />
+                <SignUpButton redirectUrl="/page" />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </nav>
+          </header>
           <main>
             {children}
           </main>
           <Analytics />
         </body>
+      </ClerkProvider>
     </html>
   )
 }
