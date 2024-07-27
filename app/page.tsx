@@ -24,16 +24,16 @@ import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
-import StarButton from './components/StarButton';
+import StarButton from "./components/StarButton";
 import {
   ClerkProvider,
   SignInButton,
   SignedIn,
   SignedOut,
   UserButton,
-} from '@clerk/nextjs'
-import { useAuth } from '@clerk/nextjs';
-import { useRouter } from 'next/router';
+} from "@clerk/nextjs";
+import { useAuth } from "@clerk/nextjs";
+import { useRouter } from "next/router";
 import Link from "next/link";
 
 const people = [
@@ -231,8 +231,8 @@ export function ThreeDCardDemo() {
         </AnimatedGradientText>
       </div>
       <CardContainer className="inter-var">
-      <CardBody className="flex justify-center flex-col items-center bg-black/20 border-black/[0.5] border-2 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[50rem] h-auto rounded-xl p-6">
-      <CardItem
+        <CardBody className="flex justify-center flex-col items-center bg-black/20 border-black/[0.5] border-2 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] sm:w-[50rem] h-auto rounded-xl p-6">
+          <CardItem
             translateZ="50"
             className="text-2xl font-bold text-neutral-400 dark:text-white"
           >
@@ -389,31 +389,45 @@ const Navbar = ({ className }: { className?: string }) => {
           </div>
         </div>
         <div className="flex items-center">
+          <StarButton />
           {!userId && (
             <>
               <MenuItem setActive={setActive} active={active} item="Sign In">
-                <Link href="sign-in" className="text-gray-300 hover:text-white mr-4">Sign In</Link>
+                <Link
+                  href="sign-in"
+                  className="text-gray-300 hover:text-white mr-4"
+                >
+                  Sign In
+                </Link>
               </MenuItem>
               <MenuItem setActive={setActive} active={active} item="Sign Up">
-                <Link href="sign-up" className="text-gray-300 hover:text-white mr-4">Sign Up</Link>
+                <Link
+                  href="sign-up"
+                  className="text-gray-300 hover:text-white mr-4"
+                >
+                  Sign Up
+                </Link>
               </MenuItem>
             </>
           )}
           {userId && (
             <MenuItem setActive={setActive} active={active} item="Profile">
-              <Link href="profile" className="text-gray-300 hover:text-white mr-4">Profile</Link>
+              <Link
+                href="profile"
+                className="text-gray-300 hover:text-white mr-4"
+              >
+                Profile
+              </Link>
             </MenuItem>
           )}
           <div className="ml-auto">
             <UserButton afterSignOutUrl="/" />
           </div>
-          <StarButton />
         </div>
       </Menu>
     </div>
   );
 };
-
 
 export default function Home() {
   return (
