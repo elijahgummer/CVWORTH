@@ -23,7 +23,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <ClerkProvider>
         <body
           className={cn(
             "min-h-screen bg-background font-sans antialiased",
@@ -36,7 +35,6 @@ export default function RootLayout({
           </main>
           <Analytics />
         </body>
-      </ClerkProvider>
     </html>
   )
 }
