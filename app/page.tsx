@@ -407,6 +407,7 @@ const Navbar = ({ className }: { className?: string }) => {
           <div className="ml-auto">
             <UserButton afterSignOutUrl="/" />
           </div>
+          <StarButton />
         </div>
       </Menu>
     </div>
