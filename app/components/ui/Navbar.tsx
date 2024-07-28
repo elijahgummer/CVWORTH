@@ -80,7 +80,7 @@ const Navbar = ({ className }: { className?: string }) => {
           {userId && (
               <Link
                 href="profile"
-                className="text-gray-300 hover:text-white mr-4 ml-10"
+                className="text-gray-300 hover:text-white mr-4 ml-10 text-sm"
               >
                 Profile
               </Link>
