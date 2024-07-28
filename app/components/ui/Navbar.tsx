@@ -62,7 +62,6 @@ const Navbar = ({ className }: { className?: string }) => {
           </div>
         </div>
         <div className="flex items-center">
-          <StarButton />
           {!userId && (
             <>
               <Link
@@ -75,17 +74,9 @@ const Navbar = ({ className }: { className?: string }) => {
               <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
                 <div className="relative h-full w-10 bg-white/20"></div>
               </div>
-
-              <MenuItem setActive={setActive} active={active} item="Sign Up">
-                <Link
-                  href="sign-up"
-                  className="text-gray-300 hover:text-white mr-4"
-                >
-                  Sign Up
-                </Link>
-              </MenuItem>
             </>
           )}
+          <StarButton />
           {userId && (
             <MenuItem setActive={setActive} active={active} item="Profile">
               <Link
