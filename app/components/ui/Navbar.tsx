@@ -68,7 +68,7 @@ const Navbar = ({ className }: { className?: string }) => {
                 href="../sign-in/page"
                 className="ml-10 text-sm rounded-xl text-gray-300 hover:text-white hover:bg-[#1D3E7A24] border mr-4 relative rounded-6 px-4 py-2 text-body-small-medium transition-colors before:inside-border hover:before:border-transparent active:translate-y-[0.5px] active:before:border-transparent before:border-neutral-opaque-10 hover:bg-neutral-opaque-10 active:bg-[#1D3E7A24]"
               >
-                Sign In or Creat Account
+                Sign In or Create Account
               </Link>
 
               <div className="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]">
