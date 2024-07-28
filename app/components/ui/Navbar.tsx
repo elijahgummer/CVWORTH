@@ -65,8 +65,8 @@ const Navbar = ({ className }: { className?: string }) => {
           {!userId && (
             <>
               <Link
-                href="../sign-in/page"
-                className="ml-10 text-sm rounded-xl text-gray-300 hover:text-white hover:bg-[#1D3E7A24] border mr-4 relative rounded-6 px-4 py-2 text-body-small-medium transition-colors before:inside-border hover:before:border-transparent active:translate-y-[0.5px] active:before:border-transparent before:border-neutral-opaque-10 hover:bg-neutral-opaque-10 active:bg-[#1D3E7A24]"
+                href="sign-in"
+                className="ml-10 text-sm rounded-xl text-gray-300 hover:text-white hover:bg-[#1D3E7A24] hover:border border-gray-900 mr-4 relative rounded-6 px-4 py-2 text-body-small-medium transition-colors before:inside-border hover:before:border-transparent active:translate-y-[0.5px] active:before:border-transparent before:border-neutral-opaque-10 hover:bg-neutral-opaque-10 active:bg-[#1D3E7A24]"
               >
                 Sign In or Create Account
               </Link>
