@@ -4,7 +4,8 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Analytics } from '@vercel/analytics/react';
 import { ClerkProvider, SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, RedirectToSignIn } from '@clerk/nextjs';
-import Header from './componentss/Header';
+import { NavbarDemo } from "./components/ui/Navbar"; // adjust the path as needed
+
 
 export const metadata: Metadata = {
   title: 'CVWORTH | Resume Analyser',
@@ -30,6 +31,7 @@ export default function RootLayout({
             fontSans.variable
           )}
         >
+          <NavbarDemo />
           <main>
             {children}
           </main>

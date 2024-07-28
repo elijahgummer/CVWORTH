@@ -18,7 +18,7 @@ import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
-import { NavbarDemo } from "./components/Navbar"; // adjust the path as needed
+import { NavbarDemo } from "./components/ui/Navbar"; // adjust the path as needed
 
 
 const people = [
@@ -336,7 +336,6 @@ export default function Home() {
       <div className="flex items-center justify-center flex-col">
         <BackgroundGradientAnimationDemo />
         <AnimatedTooltipPreview />
-        <NavbarDemo />
         <HoverSpring />
         <HeroScrollDemo />
         <ThreeDCardDemo />
