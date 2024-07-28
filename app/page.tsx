@@ -18,6 +18,7 @@ import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
+import { NavbarDemo } from "./components/Navbar"; // adjust the path as needed
 
 
 const people = [

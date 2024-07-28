@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { cn } from "@/util/cn";
 import {
     HoveredLink,
     Menu,
