@@ -3,8 +3,8 @@ import { UserProfile } from '@clerk/nextjs';
 const ProfilePage = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-black">
-      <div className="w-full max-w-lg p-6 bg-gray-800 rounded-lg shadow-lg">
-        <UserProfile 
+      <div className="w-full max-w-lg">
+        <UserProfile
           appearance={{
             elements: {
               card: 'bg-gray-800 text-white p-6 rounded-lg shadow-lg',
