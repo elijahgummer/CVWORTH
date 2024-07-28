@@ -78,14 +78,12 @@ const Navbar = ({ className }: { className?: string }) => {
           )}
           <StarButton />
           {userId && (
-            <MenuItem setActive={setActive} active={active} item="Profile">
               <Link
                 href="profile"
                 className="text-gray-300 hover:text-white mr-4"
               >
                 Profile
               </Link>
-            </MenuItem>
           )}
           <div className="ml-auto">
             <UserButton afterSignOutUrl="/" />
