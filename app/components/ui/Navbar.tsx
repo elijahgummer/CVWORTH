@@ -67,7 +67,7 @@ const Navbar = ({ className }: { className?: string }) => {
             <>
               <Link
                 href="../sign-in/page"
-                className="text-sm text-gray-300 hover:text-white border mr-4 relative rounded-6 px-4 py-2 text-body-small-medium transition-colors before:inside-border hover:before:border-transparent active:translate-y-[0.5px] active:before:border-transparent before:border-neutral-opaque-10 hover:bg-neutral-opaque-10 active:bg-[#1D3E7A24]"
+                className="text-sm rounded-lg text-gray-300 hover:text-white hover:bg-[#1D3E7A24] border mr-4 relative rounded-6 px-4 py-2 text-body-small-medium transition-colors before:inside-border hover:before:border-transparent active:translate-y-[0.5px] active:before:border-transparent before:border-neutral-opaque-10 hover:bg-neutral-opaque-10 active:bg-[#1D3E7A24]"
               >
                 Sign In
               </Link>
