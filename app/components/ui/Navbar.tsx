@@ -45,9 +45,7 @@ const Navbar = ({ className }: { className?: string }) => {
                 <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="/">Home</Link>
             </div>
             <div className="mr-5">
-              <MenuItem setActive={setActive} active={active} item="Process">
                 <Link href="/process">Process</Link>
-              </MenuItem>
             </div>
             <div className="mr-5">
               <MenuItem setActive={setActive} active={active} item="Upload">
