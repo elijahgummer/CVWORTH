@@ -1,4 +1,4 @@
-# CVWORTH
+# CVWORTH (STILL IN PROGRESS 🚧 WILL BE RELEASING THE WEBSITE SOON 3-2 weeks)
 
 CVWorth is an AI-powered web application designed to analyse your resume's worth and provide actionable feedback to help you improve.
 
