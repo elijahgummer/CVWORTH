@@ -141,7 +141,7 @@ export function DockDemo() {
             <a href="#">Terms</a>
           </li>
           <li className="list-inline-item">
-            <a href="#">Privacy Policy</a>
+            <a href="#">Policy</a>
           </li>
         </ul>
         <p className={styles.footer}>© 2024 All rights reserved. - CVWORTH</p>
