@@ -25,6 +25,9 @@ Easy resume upload and feedback retrieval.
 ### Security and Privacy
 Your information is secured during transfer using hashing and is not saved to any database, ensuring your data is not collected.
 
+### Authentication
+To access this website, you will need to authenticate. Rest assured, your information will be securely protected (Google, Github Oauth Supported). 
+
 ## How It Works
 
 1. **Upload Your Resume**: Upload your resume in PDF format.
@@ -40,6 +43,7 @@ Your information is secured during transfer using hashing and is not saved to an
 - CSS
 - TypeScript
 - Mistral AI
+- Clerk
 
 ## License
 
