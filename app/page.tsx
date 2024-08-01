@@ -296,7 +296,7 @@ export function BackgroundGradientAnimationDemo() {
   const words = ["GREAT", "VALUABLE", "EMPOWERING", "WORTHWHILE"];
   return (
     <BackgroundGradientAnimation>
-      <div className="relative w-full h-screen flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl flex-col">
+      <div className=" href=#home relative w-full h-screen flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl flex-col">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <BlurIn
             word="CVWORTH IS"
