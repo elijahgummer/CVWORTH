@@ -199,7 +199,7 @@ const Icons = {
 
 export function ThreeDCardDemo() {
   return (
-    <div className="h-[60rem] flex-col w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
+    <div id="uniqueUpload" className="h-[60rem] flex-col w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
       <h1 className="md:text-3xl text-3xl lg:text-8xl font-bold text-center relative z-20 pointer-events-none whitespace-pre-wrap bg-headerColor bg-clip-text leading-none text-transparent dark:from-white dark:to-slate-900/10">
         Upload Your Resume
       </h1>
