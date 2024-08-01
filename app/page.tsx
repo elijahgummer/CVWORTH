@@ -60,7 +60,7 @@ const ProjectsData = [
 
 const HoverSpring = () => {
   return (
-    <div id="#process" className="flex flex-col overflow-hidden w-full">
+    <div id="uniqueProcess" className="flex flex-col overflow-hidden w-full">
       <div className="h-[35rem] w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
         <div className="flex items-center justify-center w-full flex-col">
           <h1 className="text-headerColor font-bold lg:text-5xl">
@@ -296,7 +296,7 @@ export function BackgroundGradientAnimationDemo() {
   const words = ["GREAT", "VALUABLE", "EMPOWERING", "WORTHWHILE"];
   return (
     <BackgroundGradientAnimation>
-      <div className=" href=#home relative w-full h-screen flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl flex-col">
+      <div id="uniqueHome" className="relative w-full h-screen flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl flex-col">
         <div className="flex flex-col md:flex-row justify-center items-center">
           <BlurIn
             word="CVWORTH IS"
