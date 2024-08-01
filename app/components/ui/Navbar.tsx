@@ -42,7 +42,7 @@ const Navbar = ({ className }: { className?: string }) => {
           <h1 className="font-bold -m-3 text-white text-1xl">CVWORTH</h1>
           <div className="ml-20 flex justify-start items-center flex-row">
             <div className="mr-5">
-                <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="/">Home</Link>
+                <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#home">Home</Link>
             </div>
             <div className="mr-5">
                 <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="/process">Process</Link>
