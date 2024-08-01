@@ -50,7 +50,7 @@ const Navbar = ({ className }: { className?: string }) => {
             <div className="mr-5">
                 <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#uniqueUpload">Upload</Link>
             </div>
-              <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#policy">Policy</Link>
+              <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#uniquePolicy">Policy</Link>
           </div>
         </div>
         <div className="flex items-center">
