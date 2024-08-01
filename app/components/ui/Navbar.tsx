@@ -48,9 +48,9 @@ const Navbar = ({ className }: { className?: string }) => {
                 <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#process">Process</Link>
             </div>
             <div className="mr-5">
-                <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="/upload">Upload</Link>
+                <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#upload">Upload</Link>
             </div>
-              <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="/policy">Policy</Link>
+              <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#policy">Policy</Link>
           </div>
         </div>
         <div className="flex items-center">
