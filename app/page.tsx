@@ -19,13 +19,6 @@ import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
 import { NavbarDemo } from "./components/ui/Navbar"; // adjust the path as needed
-import {
-  Modal,
-  ModalBody,
-  ModalContent,
-  ModalFooter,
-  ModalTrigger,
-} from "./components/ui/animated-modal";
 
 
 
