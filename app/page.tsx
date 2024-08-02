@@ -186,9 +186,7 @@ const HoverSpring = () => {
     </div>
   );
 };
-
 export type IconProps = React.HTMLAttributes<SVGElement>;
-
 export function DockDemo() {
   return (
     <div className="footerContainer">
