@@ -588,6 +588,7 @@ export default function Home() {
         <HeroScrollDemo />
         <ThreeDCardDemo />
         <DockDemo />
+        <AnimatedModalDemo />
       </div>
     </main>
   );
