@@ -21,7 +21,7 @@ import {
   ModalContent,
   ModalFooter,
   ModalTrigger,
-} from "./components/ui/animated-modal";
+} from "./animated-modal";
 
 
 export function NavbarDemo() {
