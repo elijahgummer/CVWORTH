@@ -9,7 +9,6 @@ import { cn } from "@/util/cn";
 import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
 import { AnimatedTooltip } from "./components/ui/animated-tooltip";
 import { CardBody, CardContainer, CardItem } from "./components/ui/3d-card";
-
 import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
 import AnimatedGradientText from "./components/magicui/animated-gradient-text";
