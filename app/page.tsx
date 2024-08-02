@@ -62,31 +62,6 @@ export function AnimatedModalDemo() {
                   5 connecting flights
                 </span>
               </div>
-              <div className="flex items-center justify-center">
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  12 hotels
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  69 visiting spots
-                </span>
-              </div>
-              <div className="flex  items-center justify-center">
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Good food everyday
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Open Mic
-                </span>
-              </div>
-              <div className="flex items-center justify-center">
-                <span className="text-neutral-700 dark:text-neutral-300 text-sm">
-                  Paragliding
-                </span>
-              </div>
             </div>
           </ModalContent>
           <ModalFooter className="gap-4">
