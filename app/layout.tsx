@@ -4,7 +4,7 @@ import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Analytics } from '@vercel/analytics/react';
 import { ClerkProvider, SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, RedirectToSignIn } from '@clerk/nextjs';
-import { NavbarDemo } from "./components/ui/Navbar"; // adjust the path as needed
+import { NavbarDemo } from "./components/Navbar"; // adjust the path as needed
 
 
 export const metadata: Metadata = {
