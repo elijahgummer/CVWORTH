@@ -102,14 +102,6 @@ export function AnimatedModalDemo() {
     </div>
   );
 }
- 
- 
-
- 
-
- 
-
-
 const people = [
   {
     id: 1,
@@ -119,7 +111,6 @@ const people = [
     image: "/picofme.png",
   },
 ];
-
 const ProjectsData = [
   {
     id: 1,
