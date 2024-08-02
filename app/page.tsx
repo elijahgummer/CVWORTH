@@ -137,7 +137,6 @@ const ProjectsData = [
     image: "/briefcase.svg",
   },
 ];
-
 const HoverSpring = () => {
   return (
     <div id="uniqueFeatures" className="flex flex-col overflow-hidden w-full">
