@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cn } from "@/util/cn";
 import SparklesText from "./magicui/sparkles-text";
 import AnimatedShinyText from "./magicui/animated-shiny-text";
