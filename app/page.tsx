@@ -226,7 +226,6 @@ export function DockDemo() {
     </div>
   );
 }
-
 const Icons = {
   gitHub: (props: IconProps) => (
     <svg viewBox="0 0 438.549 438.549" {...props}>
@@ -273,7 +272,6 @@ const Icons = {
     </svg>
   ),
 };
-
 export function ThreeDCardDemo() {
   return (
     <div id="uniqueUpload" className="h-[60rem] flex-col w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
@@ -319,7 +317,6 @@ export function ThreeDCardDemo() {
     </div>
   );
 }
-
 export function HeroScrollDemo() {
   return (
     <div id="uniqueProcess" className="flex flex-col overflow-hidden w-full">
@@ -360,7 +357,6 @@ export function HeroScrollDemo() {
     </div>
   );
 }
-
 export function AnimatedTooltipPreview() {
   return (
     <div className="tooltipContainer flex flex-row items-center justify-center mb-10 w-full">
@@ -368,7 +364,6 @@ export function AnimatedTooltipPreview() {
     </div>
   );
 }
-
 export function BackgroundGradientAnimationDemo() {
   const words = ["GREAT", "VALUABLE", "EMPOWERING", "WORTHWHILE"];
   return (
@@ -404,9 +399,6 @@ export function BackgroundGradientAnimationDemo() {
     </BackgroundGradientAnimation>
   );
 }
-
-
-
 export default function Home() {
   return (
     <main className="w-full">
