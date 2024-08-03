@@ -154,7 +154,6 @@ const HoverSpring = () => {
     </div>
   );
 };
-
 export function ThreeDCardDemo() {
   return (
     <div id="uniqueUpload" className="h-[60rem] flex-col w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
