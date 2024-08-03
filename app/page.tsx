@@ -7,7 +7,6 @@ import styles from "./styles/Home.module.css";
 import { FlipWords } from "./components/ui/flip-words";
 import { cn } from "@/util/cn";
 import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
-import { AnimatedTooltip } from "./components/ui/animated-tooltip";
 import { CardBody, CardContainer, CardItem } from "./components/ui/3d-card";
 import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
