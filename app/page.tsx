@@ -14,6 +14,7 @@ import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
 import { DockDemo } from "./components/Dock"; // adjust the path as needed
 import { HeroScrollDemo } from "./components/HeroScroll"; // adjust the path as needed
+import { AnimatedTooltipPreview } from "./components/AnimatedTooltip"; // adjust the path as needed
 import {
   Modal,
   ModalBody,
