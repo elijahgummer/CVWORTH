@@ -2,6 +2,7 @@ import { SignUp } from '@clerk/nextjs';
 
 const SignUpPage = () => {
   return (
+    <div className="h-[60rem] flex-col w-full dark:bg-black bg-[#0A0A0A] dark:bg-grid-white/[0.2] bg-grid-black/[0.2] bg-[length:32px_32px] relative flex items-center justify-center">
     <div className="flex justify-center items-center min-h-screen bg-gray-900">
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
         <SignUp
@@ -17,6 +18,7 @@ const SignUpPage = () => {
           }}
         />
       </div>
+    </div>
     </div>
   );
 };
