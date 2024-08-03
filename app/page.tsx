@@ -116,7 +116,6 @@ export function ThreeDCardDemo() {
     </div>
   );
 }
-
 export function BackgroundGradientAnimationDemo() {
   const words = ["GREAT", "VALUABLE", "EMPOWERING", "WORTHWHILE"];
   return (
