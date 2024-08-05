@@ -5,6 +5,7 @@ import { DockDemo } from "./components/Dock"; // adjust the path as needed
 import { HeroScrollDemo } from "./components/HeroScroll"; // adjust the path as needed
 import { AnimatedTooltipPreview } from "./components/AnimatedTooltip"; // adjust the path as needed
 import { ThreeDCardDemo } from "./components/ThreeDCard"; // adjust the path as needed
+import { ThreeDCardDemo } from "./components/BackgroundGradAnim"; // adjust the path as needed
 import HoverSpring from "./components/HoverSpring"; // adjust the path as needed
 
 
