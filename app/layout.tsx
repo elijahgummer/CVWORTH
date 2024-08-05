@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import { Inter as FontSans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Analytics } from '@vercel/analytics/react';
-import { ClerkProvider, SignInButton, SignUpButton, SignedIn, SignedOut, UserButton, RedirectToSignIn } from '@clerk/nextjs';
+import { ClerkProvider } from '@clerk/nextjs';
 import { NavbarDemo } from "./components/Navbar"; // adjust the path as needed
 
 
