@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 import { DockDemo } from "./components/Dock"; // adjust the path as needed
 import { HeroScrollDemo } from "./components/HeroScroll"; // adjust the path as needed
 import { AnimatedTooltipPreview } from "./components/AnimatedTooltip"; // adjust the path as needed
-import {  } from "./components/AnimatedTooltip"; // adjust the path as needed
+import { ThreeDCardDemo } from "./components/ThreeDCard"; // adjust the path as needed
 import HoverSpring from "./components/HoverSpring"; // adjust the path as needed
 
 export function BackgroundGradientAnimationDemo() {
