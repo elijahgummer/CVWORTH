@@ -1,3 +1,4 @@
+import { cn } from "@/util/cn";
 import AnimatedGradientText from "./magicui/animated-gradient-text";
 
 export function ThreeDCardDemo() {

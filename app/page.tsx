@@ -10,7 +10,6 @@ import { BackgroundGradientAnimation } from "./components/ui/background-gradient
 import { CardBody, CardContainer, CardItem } from "./components/ui/3d-card";
 import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
-import AnimatedGradientText from "./components/magicui/animated-gradient-text";
 import { motion } from "framer-motion";
 import { DockDemo } from "./components/Dock"; // adjust the path as needed
 import { HeroScrollDemo } from "./components/HeroScroll"; // adjust the path as needed
