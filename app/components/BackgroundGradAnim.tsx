@@ -1,6 +1,6 @@
 import { FlipWords } from "./ui/flip-words";
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
-import BlurIn from "./components/magicui/blur-in";
+import BlurIn from "./magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
 
 export function BackgroundGradientAnimationDemo() {
