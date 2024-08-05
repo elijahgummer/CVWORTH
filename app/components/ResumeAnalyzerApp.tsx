@@ -39,7 +39,7 @@ const ResumeAnalyzerApp = () => {
     if (resumeText !== '') {
       getResumeWorth(resumeText).then();
     }
-  }, [resumeText]);
+  }, [resumeText, complete]);
 
   return (
     <div className={styles.analyzerWrapper}>
