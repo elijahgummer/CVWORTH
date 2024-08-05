@@ -1,5 +1,5 @@
 import { FlipWords } from "./ui/flip-words";
-import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
+import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
 
