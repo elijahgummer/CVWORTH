@@ -1,4 +1,4 @@
-import AnimatedGradientText from "magicui/animated-gradient-text";
+import AnimatedGradientText from "./magicui/animated-gradient-text";
 
 export function ThreeDCardDemo() {
     return (
