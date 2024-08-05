@@ -1,4 +1,5 @@
 import { cn } from "@/util/cn";
+import { CardBody, CardContainer, CardItem } from "./components/ui/3d-card";
 import AnimatedGradientText from "./magicui/animated-gradient-text";
 
 export function ThreeDCardDemo() {
