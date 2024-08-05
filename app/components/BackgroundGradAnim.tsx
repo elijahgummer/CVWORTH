@@ -1,7 +1,7 @@
 import { FlipWords } from "./ui/flip-words";
 import { BackgroundGradientAnimation } from "./ui/background-gradient-animation";
 import BlurIn from "./magicui/blur-in";
-import WordPullUp from "./components/magicui/word-pullup";
+import WordPullUp from "./magicui/word-pullup";
 
 export function BackgroundGradientAnimationDemo() {
     const words = ["GREAT", "VALUABLE", "EMPOWERING", "WORTHWHILE"];
