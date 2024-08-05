@@ -1,14 +1,10 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import Image from "next/image";
-import styles from "./styles/Home.module.css";
 import { FlipWords } from "./components/ui/flip-words";
-import { cn } from "@/util/cn";
 import { BackgroundGradientAnimation } from "./components/ui/background-gradient-animation";
 import BlurIn from "./components/magicui/blur-in";
 import WordPullUp from "./components/magicui/word-pullup";
-import { motion } from "framer-motion";
 import { DockDemo } from "./components/Dock"; // adjust the path as needed
 import { HeroScrollDemo } from "./components/HeroScroll"; // adjust the path as needed
 import { AnimatedTooltipPreview } from "./components/AnimatedTooltip"; // adjust the path as needed
