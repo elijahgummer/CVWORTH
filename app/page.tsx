@@ -2,7 +2,6 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import ResumeAnalyzerApp from "./components/ResumeAnalyzerApp";
 import styles from "./styles/Home.module.css";
 import { FlipWords } from "./components/ui/flip-words";
 import { cn } from "@/util/cn";
