@@ -12,7 +12,7 @@ const SignUpPage = () => {
               formFieldInput: 'bg-gray-700 border border-gray-600 text-white placeholder-gray-400 rounded focus:ring-2 focus:ring-purple-600',
               formFieldLabel: 'text-gray-300',
               card: 'bg-gray-800',
-              headerTitle: 'text-white',
+              headerTitle: 'text-black',
               headerSubtitle: 'text-gray-400',
             }
           }}
