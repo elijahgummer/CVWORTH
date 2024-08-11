@@ -2,8 +2,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import styles from "./styles/Home.module.css";
-import { cn } from "@/util/cn";
 
 const ProjectsData = [
     {

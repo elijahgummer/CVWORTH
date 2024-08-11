@@ -9,6 +9,7 @@ import { BackgroundGradientAnimationDemo } from "./components/BackgroundGradAnim
 import HoverSpring from "./components/HoverSpring"; // adjust the path as needed
 
 
+
 export default function Home() {
   return (
     <main className="w-full">

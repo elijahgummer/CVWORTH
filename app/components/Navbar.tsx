@@ -73,14 +73,6 @@ const Navbar = ({ className }: { className?: string }) => {
             </>
           )}
           <StarButton />
-          {userId && (
-              <Link
-                href="profile"
-                className="text-gray-300 hover:text-white mr-4 ml-10 text-sm"
-              >
-                Profile
-              </Link>
-          )}
           <div className="ml-auto">
             <UserButton afterSignOutUrl="/" />
           </div>

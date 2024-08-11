@@ -29,6 +29,9 @@ html {
   width: 100%;
   scroll-behavior: smooth;
 }
+body {
+  overflow-x: hidden;
+}
 /* Custom scroll bar */
 ::-webkit-scrollbar {
   width: 10px;
