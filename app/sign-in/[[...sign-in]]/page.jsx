@@ -10,7 +10,7 @@ const SignInPage = () => {
             elements: {
               card: 'text-white p-6 rounded-lg shadow-lg',
               logoImage: 'hidden',
-              headerTitle: 'text-2xl text-center text-white mb-6',
+              headerTitle: 'text-xl text-center text-black mb-6',
               primaryButton: 'w-full py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500',
               secondaryButton: 'w-full py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500',
               footer: 'text-center text-gray-400 mt-6',
