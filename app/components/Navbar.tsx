@@ -32,7 +32,7 @@ const Navbar = ({ className }: { className?: string }) => {
     <div className={cn("fixed top-5 inset-x-0 w-70% mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <div className="flex items-center justify-start">
-          <Link href="/" passHref>
+          <Link className="flex items-center justify-center flex-row" href="/" passHref>
               <Image
                 className="image"
                 height={40}
