@@ -16,7 +16,6 @@ import { useAuth } from "@clerk/nextjs";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-
 export function NavbarDemo() {
   return (
     <div className="relative flex items-center justify-center text-center">
@@ -33,28 +32,55 @@ const Navbar = ({ className }: { className?: string }) => {
     <div className={cn("fixed top-5 inset-x-0 w-70% mx-auto z-50", className)}>
       <Menu setActive={setActive}>
         <div className="flex items-center justify-start">
-          <Image
-            className="image"
-            height="40"
-            width="40"
-            src="/logo.png"
-            alt="Logo"
-          />
+          <Link href="/" passHref>
+              <Image
+                className="image"
+                height={40}
+                width={40}
+                src="/logo.png"
+                alt="Logo"
+              />
+          </Link>
           <h1 className="font-bold -m-3 text-white text-1xl">CVWORTH</h1>
           <div className="ml-20 flex justify-start items-center flex-row">
             <div className="mr-5">
-                <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#uniqueHome">Home</Link>
+              <Link
+                className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center"
+                href="#uniqueHome"
+              >
+                Home
+              </Link>
             </div>
             <div className="mr-5">
-                <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#uniqueFeatures">Features</Link>
+              <Link
+                className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center"
+                href="#uniqueFeatures"
+              >
+                Features
+              </Link>
             </div>
             <div className="mr-5">
-                <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#uniqueProcess">Process</Link>
+              <Link
+                className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center"
+                href="#uniqueProcess"
+              >
+                Process
+              </Link>
             </div>
             <div className="mr-5">
-                <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#uniqueUpload">Upload</Link>
+              <Link
+                className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center"
+                href="#uniqueUpload"
+              >
+                Upload
+              </Link>
             </div>
-            <Link className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center" href="#uniquePolicy">Policy</Link>
+            <Link
+              className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center"
+              href="#uniquePolicy"
+            >
+              Policy
+            </Link>
           </div>
         </div>
         <div className="flex items-center">
