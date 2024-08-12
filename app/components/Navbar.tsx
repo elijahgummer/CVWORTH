@@ -40,8 +40,8 @@ const Navbar = ({ className }: { className?: string }) => {
                 src="/logo.png"
                 alt="Logo"
               />
-          </Link>
           <h1 className="font-bold -m-3 text-white text-1xl">CVWORTH</h1>
+          </Link>
           <div className="ml-20 flex justify-start items-center flex-row">
             <div className="mr-5">
               <Link
