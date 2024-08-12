@@ -99,7 +99,7 @@ const Navbar = ({ className }: { className?: string }) => {
             </>
           )}
           <StarButton />
-          <div className="ml-auto">
+          <div className="ml-5">
             <UserButton afterSignOutUrl="/" />
           </div>
         </div>
