@@ -85,7 +85,7 @@ const Navbar = ({ className }: { className?: string }) => {
               className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center"
               href="#uniquePolicy"
             >
-              Policy
+              UploadAnalyse
             </Link>
           </div>
         </div>
