@@ -83,7 +83,7 @@ const Navbar = ({ className }: { className?: string }) => {
             </Link>
             <Link
               className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center"
-              href="#uniquePolicy"
+              href="upload"
             >
               UploadAnalyse
             </Link>
