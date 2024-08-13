@@ -81,12 +81,6 @@ const Navbar = ({ className }: { className?: string }) => {
             >
               Policy
             </Link>
-            <Link
-              className="cursor-pointer text-14px text-navbarTabs hover:text-white dark:text-white text-center justify-start items-center"
-              href="upload"
-            >
-              UploadAnalyse
-            </Link>
           </div>
         </div>
         <div className="flex items-center">
