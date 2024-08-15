@@ -5,8 +5,6 @@ import { cn } from "@/lib/utils";
 import { Analytics } from '@vercel/analytics/react';
 import { ClerkProvider } from '@clerk/nextjs';
 import { NavbarDemo } from "./components/Navbar"; // adjust the path as needed
-
-
 export const metadata: Metadata = {
   title: 'CVWORTH | Resume Analyser',
   description: 'Measure how much your resume is worth!',
