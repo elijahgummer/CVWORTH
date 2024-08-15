@@ -170,5 +170,4 @@ function addVariablesForColors({ addBase, theme }: PluginUtils) {
     ":root": newVars,
   });
 }
-
 export default config;
