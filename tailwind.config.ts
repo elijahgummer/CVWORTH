@@ -165,7 +165,6 @@ function addVariablesForColors({ addBase, theme }: PluginUtils) {
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
-
   addBase({
     ":root": newVars,
   });
