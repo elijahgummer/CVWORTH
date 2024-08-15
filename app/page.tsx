@@ -7,9 +7,6 @@ import { AnimatedTooltipPreview } from "./components/AnimatedTooltip"; // adjust
 import { ThreeDCardDemo } from "./components/ThreeDCard"; // adjust the path as needed
 import { BackgroundGradientAnimationDemo } from "./components/BackgroundGradAnim"; // adjust the path as needed
 import HoverSpring from "./components/HoverSpring"; // adjust the path as needed
-
-
-
 export default function Home() {
   return (
     <main className="w-full">
