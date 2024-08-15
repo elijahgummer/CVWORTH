@@ -160,7 +160,6 @@ const config: Config = {
     addVariablesForColors,
   ],
 };
-
 function addVariablesForColors({ addBase, theme }: PluginUtils) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
