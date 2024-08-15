@@ -9,7 +9,6 @@ export const metadata: Metadata = {
   title: 'CVWORTH | Resume Analyser',
   description: 'Measure how much your resume is worth!',
 }
-
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
