@@ -1,5 +1,4 @@
 "use client";
-
 import React, { useState, useRef, useEffect } from "react";
 import { DockDemo } from "./components/Dock"; // adjust the path as needed
 import { HeroScrollDemo } from "./components/HeroScroll"; // adjust the path as needed
