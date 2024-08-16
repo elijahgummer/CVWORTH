@@ -7,7 +7,6 @@
   margin: 0;
   height: auto;
 }
-
 .container {
   width: 100%;
   max-width: 920px;
@@ -16,12 +15,10 @@
   flex-direction: column;
   min-height: 100vh;
 }
-
 .logoBox {
   padding-top: 50px;
   height: 120px;
 }
-
 .logoBox p {
   font-size: 38px;
   font-weight: bold;
