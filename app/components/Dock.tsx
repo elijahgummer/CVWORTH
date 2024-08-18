@@ -25,7 +25,7 @@ export function DockDemo() {
             <a href="#home">Home</a>
           </li>
           <li className="list-inline-item">
-            <a href="#">Process</a>
+            <a href="#process">Process</a>
           </li>
           <li className="list-inline-item">
             <a href="#">Upload</a>
