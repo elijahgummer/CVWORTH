@@ -22,7 +22,7 @@ export function DockDemo() {
         </div>
         <ul className="list-inline">
           <li className="list-inline-item">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li className="list-inline-item">
             <a href="#">Process</a>
