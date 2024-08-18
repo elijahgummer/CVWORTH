@@ -31,7 +31,7 @@ export function DockDemo() {
             <a href="#uniqueProcess">Process</a>
           </li>
           <li className="list-inline-item">
-            <a href="#">Upload</a>
+            <a href="#uniqueUpload">Upload</a>
           </li>
           <li className="list-inline-item">
             <a href="#">Terms</a>
